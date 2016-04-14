@@ -1,3 +1,3 @@
-# What is a Back-End Developer?
+# What is a Web Developer?
 
-  With concepts of separation of concerns in mind, the necessity of dividing the presentation layer from the 
+  Before we move to the theory, I want to With concepts of separation of concerns in mind, the necessity of dividing the presentation layer from the 
