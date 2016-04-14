@@ -11,13 +11,10 @@
  
    Seeking the state of the art - yet [robust](http://nob.cs.ucdavis.edu/bishop/secprog/robust.html) - web development practices, I met [ASP.NET Boilerplate](http://aspnetboilerplate.com/). After months struggling with its low learning curve, I decided to write this book.
    
-   This book intents to present and carefully explain the best practices of software architecture, design patterns, web development and many more.
+   This book intends to present and carefully explain the best practices of software architecture, design pattern, modern web development and more. It displays theory and practices through the usage of the framework, all explained by examples. It also implements a few applications.
    
+   After this book, I expect you to have a solid foundation to build your own, industrial-tier websites.
+
 
 
  
- 
-
-
-
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
