@@ -11,8 +11,8 @@
   
   At this point, the foundation of web development was built: the front and back-end: the distinction, or separation of concerns, between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications.
   
-## Front-end or back-end developer?
+## Front or back-end developer?
 
-  This book is focused on back-end development.
+  This book is focused on back-end development. 
   
   
