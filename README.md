@@ -3,7 +3,8 @@
 
 
 ## Foreword
- After years working with plain and pure PHP, I noticed that I had developed, over the course of two years. I met the [Ruby on Rails](http://rubyonrails.org/) world. I was still a novice This book was written with the intention of displayin for the readers a
+ I spent two years working with pure PHP after funding my first company: Popguest. During that time, I rewrote the whole web platform five times. But still, the whole code was unreadable and tangled. I noticed something was wrong. After spending weeks building my own framework, I met the [Ruby on Rails](http://rubyonrails.org/) world. I was still a novice, but the concept of a Model-View-Controller architecture was appealing.
+ It just occurred to me that I knew nothing after all. At this point, I took a break from web development. I spent a whole year studying Pervasive Computing and Security.
 
 
 
