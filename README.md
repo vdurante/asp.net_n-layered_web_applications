@@ -23,8 +23,6 @@
 
   Part one describes the theory behind software architecture, design patterns, general conventions, the ASP.NET MVC framework and the ASP.NET Boilerplate framework.
 
-## Part II. Building our first web application
-
 
 
 
