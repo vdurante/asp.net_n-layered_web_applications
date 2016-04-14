@@ -32,4 +32,6 @@ Some key principles must be kept in mind when designing an architecture:
 * **Model to analyze and reduce risks.** Modeling the architecture using tools like the Unified Modeling Language (UML) helps the visualization of the system, facilitating the understanding of the system as a whole. Being prepared for the risks that may arise is also important to avoid problems.
 * **Communication.** Stakeholders must be easily aware of the architecture.
 * **Identify great engineering decisions.** Knowing to identify and avoid the most common mistakes.
-* **Recursive and **
+* **Recursive and incremental strategy.** Building cycles of development focused on creating, modifying and refactoring features or components.
+
+In short, it falls back to software engineering: plan and document everything prematurely, otherwise a drastic change may result in high expenses of time and money for the team.
