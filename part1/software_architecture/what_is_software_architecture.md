@@ -10,7 +10,7 @@ Whenever building a software, important decisions must be taken in order to achi
 *  **Human interaction.** How humans fit inside the system, whether they are stakeholders, developers or users.
 *  **Business strategy.** Defining strategies that allow the organization to achieve its long-term objectives.
 
- ![Figure 1](./resources/img/figure1.png) 
+ ![Teste](./resources/img/figure1.png) 
 
 <img src="./resources/img/figure1.png" align="center">
 
