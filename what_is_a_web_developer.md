@@ -7,7 +7,7 @@
   
   In the same year, there was another boundary to be beaten: the synchronous and static character of the web page rendering. Why does every web page has to be fully built by the server? What about making it possible to mutate the web page in the browser? The answer to these questions is JavaScript, another flexible and interpreted language. It reads the web page as a tree, manipulating it at the developer's will.
   
-  One year later, in 1996, the Cascading Style Sheet was created, aiming to simplify the style of the HTML.
+  One year later, in 1996, the Cascading Style Sheet was created, aiming to simplify the means of styling HTML.
   
   At this point, the foundation of web development was built: the front and back-end: the distinction - or separation of concerns - between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications.
   
