@@ -11,10 +11,7 @@ Whenever building a software, important decisions must be taken in order to achi
 *  **Business strategy.** Defining strategies that allow the organization to achieve its long-term objectives.
 
  ![teste](./resources/img/figure1.png) 
-
-<img src="./resources/img/figure1.png" align="center">
-
-
-
+ 
+ In short, is defining a architecture that will satisfy user, business and system goals.
 ## Goals of Software Architecture
 
