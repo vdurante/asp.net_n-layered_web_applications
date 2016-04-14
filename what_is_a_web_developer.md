@@ -1,4 +1,4 @@
-# What is a Web Developer?
+# What Is A Web Developer?
   Before moving into the theory, it is interesting to address what exactly a web developer is, what problems he/she will be dealing with on a daily basis and why this matters.
 ## The history of the web
   In 1989, Tim Berners-Lee invented the beggining of the Web as we know it: the Hypertext Markup Language, a.k.a. HTML. It came from the necessity of encapsulating data and defining the structure of a page, independently of the interpreter - in this case, the browser. It was a way of telling the browser the format of data, so it could be displayed as intended by the author of the page. It just felt more appropriate to use a mark-up language to do so.
@@ -9,8 +9,10 @@
   
   One year later, in 1996, the Cascading Style Sheet was created, aiming to simplify the means of styling HTML.
   
-  At this point, the foundation of web development was built: the front and back-end: the distinction - or separation of concerns - between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications.
+  At this point, the foundation of web development was built: the front and back-end: the distinction, or separation of concerns, between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications.
   
-## 
+## Front-end or back-end developer?
+
+  Although this book goes through front-end development as well, it is focused on back-end development.
   
   
