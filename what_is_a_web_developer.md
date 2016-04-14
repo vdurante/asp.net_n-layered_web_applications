@@ -17,8 +17,28 @@
   A back-end developer takes care of the logic and core behind the scenes in a web application. This programmer creates components and features that implements the business logic of the application. Is a person who designs, develops, maintains, tests and evaluates the software.
   A person capable of doing both is called a full-stack developer.
   ## The good developer vs. the great developer
-  Knowing the difference between a good and a great developer is a key aspect to understand this book. In a very straightforward perspective, a good developer gets the job done. A great one, instead, gets the job done in a professional way. 
+  Knowing the difference between a good and a great developer is a key aspect to understand this book. In a very straightforward perspective, a good developer gets the job done. A great one, instead, gets the job done in a professional way.
+  A nice comparison can be found [here](https://www.quora.com/Whats-the-difference-between-a-good-developer-and-a-great-developer). 7 qualities of a great developer can be identified as:
   
-  ## Educational requirements
+  1. Positive attitude
+  2. Great communication skills
+  3. Great at time, task and risk management
+  4. Quick learning ability and desire for knowledge
+  5. Deep and broad technical experience
+  6. A good team player
+  7. High end user focus
+
+From my own perspective, all the aspects above can be acquired with time, specially evaluating the 5th one. It doesn't matter if you still don't have experience. What matters is that you are capable and willing to acquire it, backing it up with a never-ending knowledge acquisition.
+
+This book is made for great or soon-to-be great developers. 
   
-  
+## Educational requirements
+Having a diploma is not necessary, although these may help:
+
+* Computer Science Bachelor Degree
+* Computer Engineering Bachelor Degree
+* System Analysis Bachelor Degree
+* Courses or previous knowledge: Software Engineering, Software Architecture, Design Patterns, Robust Programming, Web Development, C#, ASP.NET MVC Framework, and many others
+
+This book aims to bring the required knowledge in a simple way. Extra research may be required and strongly advised.
+
