@@ -1,4 +1,4 @@
-# Building N-Layered web applications in ASP.NET
+# Building N-Layered Web Applications in ASP.NET
  Written by Vitor Durante
 ## Foreword
   I spent two years working with pure PHP after funding my first company. During that time, I rewrote the whole web platform five times. But still, the whole code was unreadable and tangled. I noticed something was wrong. After spending weeks working on my own framework, I met the [Ruby on Rails](http://rubyonrails.org/) and [Django](https://www.djangoproject.com/) world. I was still a novice, but the concept of a Model-View-Controller architecture was appealing.
