@@ -12,6 +12,24 @@ Whenever building a software, important decisions must be taken in order to achi
 
  ![teste](./resources/img/figure1.png) 
  
- In short, is defining a architecture that will satisfy user, business and system goals.
+It is part of software architecture defining a architecture that will satisfy user, business and system goals. It is a hard balance to achieve.
+
 ## Goals of Software Architecture
 
+It is important to address the main goals of software architecture:
+
+* **Expose the structure of the system.** Avoid implementation details.
+* **Address requirements of stakeholders.**
+* **Address all use-case scenarios.**
+* **Handle functional and quality requirements.**
+* **Be flexible.** Being able to easily handle the recurring mutability of the software.
+
+## Key Architecture Principles
+
+Some key principles must be kept in mind when designing an architecture:
+
+* **Focus on change instead of durability.** Applications constantly change with time. Building a flexible application is crucial.
+* **Model to analyze and reduce risks.** Modeling the architecture using tools like the Unified Modeling Language (UML) helps the visualization of the system, facilitating the understanding of the system as a whole. Being prepared for the risks that may arise is also important to avoid problems.
+* **Communication.** Stakeholders must be easily aware of the architecture.
+* **Identify great engineering decisions.** Knowing to identify and avoid the most common mistakes.
+* **Recursive and **
