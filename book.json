@@ -2,5 +2,8 @@
     "plugins": [
         "image-captions"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+          "image-captions": {
+          "caption": "Image - _CAPTION_"
+      }}
 }
