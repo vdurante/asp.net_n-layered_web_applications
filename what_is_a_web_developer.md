@@ -42,3 +42,14 @@ Having a diploma is not necessary, although these may help:
 
 This book aims to bring the required knowledge in a simple way. Extra research may be required and strongly advised.
 
+## The daily life of a web developer
+A web developer, as any other developer, has its daily activities divided in two parts: theory and practice. A developer constantly switches between studying the theory behind the features it is willing to implement and actually implementing it. Knowing how to do the research is a key feature to become a great professional.
+
+A developer is constantly dealing with:
+
+* **Muable code.** Write code to change instead of writing to last.
+* **Risk management.** Working to reduce risks.
+* **Communication.** Working in a team.
+* **Identifying great engineering decisions.** Identifying and avoiding common mistakes.
+* **Recursive and incremental approach.** Constant cycle between implementing new features and changing or refactoring existing ones.
+
