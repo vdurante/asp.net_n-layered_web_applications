@@ -16,5 +16,9 @@
   This book is focused on back-end development, although the examples also present basic front-end development. A great explanation about what a front-end developer is can be found [here](http://www.frontendhandbook.com/what-is-a-FD.html).
   A back-end developer takes care of the logic and core behind the scenes in a web application. This programmer creates components and features that implements the business logic of the application. Is a person who designs, develops, maintains, tests and evaluates the software.
   A person capable of doing both is called a full-stack developer.
+  ## The good developer vs. the great developer
+  Knowing the difference between a good and a great developer is a key aspect to understand this book. In a very straightforward perspective, a good developer gets the job done. A great one, instead, gets the job done in a professional way. 
+  
+  ## Educational requirements
   
   
