@@ -9,8 +9,8 @@
   
   One year later, in 1996, the Cascading Style Sheet was created, aiming to simplify the style of the HTML.
   
-  At this point, the foundation of web development was built: the front and back-end: the distinction - or separation of concerns - between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications.
+  At this point, the foundation of web development was built: the front and back-end: the distinction - or separation of concerns - between the presentation layer (interface, front), and the business logic and data access layer (back) of web applications. The front having its pillars in HTML, CSS and JavaScript.
   
-  This book is spe
+  
   
   
