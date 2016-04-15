@@ -13,4 +13,12 @@
 
 The simple graph presented above is enough to represent the basic idea of the system's architecture, facilitating communication and understanding.
 
-Applying the design principle of replaceability, if a company decides to switch database engine, it is just a matter of switching the Model layer, instead of rewriting the whole system. Besides, if the implementation follows the architectural guideliness, other 3 principles come into play: Principle of Least Knowledge, abstraction and 
+Applying the design principle of replaceability, if a company decides to switch database engine, it is just a matter of switching the Model layer, instead of rewriting the whole system. Besides, if the implementation follows the architectural guidelines, other 2 important principles come into play: principle of least knowledge and abstraction, so that the controller and view should not be highly affected by a change in the Model layer.
+
+## Where MVC Falls Short
+
+In Web development, MVC is the most famous and widely used architecture in the present days. It is adopted due to its simplicity and suitability, not only on the Web scenario.
+
+However, the MVC architecture falls short in some aspects:
+
+* **Multipurpose controllers.** Controllers become the core of the application, 
