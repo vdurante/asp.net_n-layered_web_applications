@@ -22,8 +22,6 @@ In Web development, MVC is the most famous and widely used architecture in the p
 However, the MVC architecture, as in ASP.NET MVC, falls short in some aspects:
 
 * **Multipurpose controllers.** Controllers are the core of the application, dealing with multiple responsibilities. Not only it implements the business logic, it also deals with manipulation and validation of data being transfered between the model and the view. This fact conflicts with the single responsibility principle, over sizing the controller.
-* **Lack of an unified API.** If the application requires an API, a whole new controller must be implemented, or the existing one must be extended, also over sizing the controller.
+* **Distributed services.** If the application requires an API, a whole new controller must be implemented, or the existing one must be extended, also over sizing the controller.
 * **Lack of an ORM interface.** The controller access the Model's Object-Relational Mapper directly. A change in the ORM implies a reimplementation of the controller, breaking the abstraction and least knowledge principles.
 * **Background and real time services.** Require implementation inside the controller, over sizing it once again.
-* **Localization.** 
-* 
