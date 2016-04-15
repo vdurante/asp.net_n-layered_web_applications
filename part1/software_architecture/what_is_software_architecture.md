@@ -35,3 +35,20 @@ Some key principles must be kept in mind when designing an architecture:
 * **Communication.** Stakeholders must be easily aware of the architecture.
 * **Identify great engineering decisions.** Knowing to identify and avoid the most common mistakes.
 * **Recursive and incremental strategy.** Building cycles of development focused on creating, modifying and refactoring features or components.
+
+
+## Key Design Principles
+
+When building an architecture, some choices regarding the design of the architecture must be made. It is about taking decisions aiming to minimize costs and maintenance requirements, and also promoting usability and extendibility. These principles are:
+
+* **Separation of concerns.** Dividing the application into multiple, distinct areas with features with as little overlap in functionality as possible. This makes it easier to design and build the application, as well as allowing developers in multiple disciplines (database, server-side, front-end, design) to work in parallel.
+* **Single Responsibility principle.** Each component or module should be responsible for only a specific feature or functionality, or aggregation of cohesive functionality.
+* **Principle of Least Knowledge.** Also known as the Law of Demeter. A component or object should not know about internal details of other components or objects.
+* **Don't Repeat Yourself (DRY).** Functionalities should not have duplicates.
+* **Minimize upfront design.** Avoiding Big Design Upfront (BDUF). It is about designing only what is necessary and improving it later when needed.
+* **Abstraction.** Each component or module has its own responsibility, which can be analyzed in isolation and transparently to other components or modules.
+* **Testability.** The ability of testing each component or module separately, since there are fewer dependencies between components or modules.
+* **Replaceability.** Being able to replace a component or module without afecting others directly.
+* **Reuse.** Being capable of reusing a component or module in other applications.
+
+These principles are about being consistent, separating concerns, decreasing costs, establishing code styles aiming uniformity and being abstract.
