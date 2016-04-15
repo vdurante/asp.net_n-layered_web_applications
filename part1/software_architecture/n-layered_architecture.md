@@ -1,3 +1,9 @@
 # N-Layered Architecture
 
-  A N-Layered Architecture is an architectural style 
+  A N-Layered Architecture is an architectural style.
+  
+  ## What is an Architectural Style?
+  
+  An architectural style is a set of principles. Such principles intend to improve partitioning and promote design reuse by providing solutions to frequently recurring problems. It also provides a common language that abstracts the understanding of the problem away from the implementation, facilitating a higher level conversation.
+  
+  A great example for the Web is the Model-View-Controller architecture. It doesn't matter the language being implemented on, because the principles are the same.
