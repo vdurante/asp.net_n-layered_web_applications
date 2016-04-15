@@ -51,6 +51,13 @@ What Kalkan suggests is to expand these layers into a few others, breaking the m
 
 From Kalkan's perspective, if a application requires a switch from Entity Framework to N-Hibernate, only the infrastructure would be affected, since this change is transparent to other layers. Or, if it requires an application to be segmented into multiple distinct platforms (such as mobile apps and a web portal), it is just a matter of implementing the Presentation layer in platform-specific ways, having the Application layer shared among them, accessed through an API.
 
+A generic graph of the N-Layer can be viewed bellow:
+
+![](./resources/img/figure3.png)
+
+It is possible to see that the Controllers are View-specific. Interface and façade are added to the stack, making the implementation of the Business Logic Layer (Domain Layer) transparent to the layers above it.
+
+It is also possible to notice a new aspect: cross-cutting layers (security, operations, communications). These are layers that are commonly used and accessed by all layers.
 
 
 
