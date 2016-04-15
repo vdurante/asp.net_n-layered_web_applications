@@ -1,6 +1,6 @@
 # ASP.NET Boilerplate's Architecture
 
-Halil İbrahim Kalkan, author of the [ASP.NET Boilerplate](http://aspnetboilerplate.com/) (ABP) framework, suggests some changes to the default ASP.NET MVC framework, adding some extra layers to it, and modifying the purpose of the existing ones.
+Halil İbrahim Kalkan, author of the [ASP.NET Boilerplate](http://aspnetboilerplate.com/) (ABP) framework, suggests some changes to the default ASP.NET MVC framework, adding some extra layers to it, also modifying the purpose of the existing ones.
 
 What Kalkan suggests is to expand these layers into a few others, breaking the multipurpose controllers, implementing extra services and creating interfaces:
 
