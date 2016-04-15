@@ -7,5 +7,5 @@
    * [Software Architecture](part1/software_architecture/README.md)
        * [What Is Software Architecture](part1/software_architecture/what_is_software_architecture.md)
        * [Extra Resources](part1/software_architecture/extra_resources.md)
-       * N-Layered Architecture
+       * [N-Layered Architecture](part1/software_architecture/n-layered_architecture.md)
 
