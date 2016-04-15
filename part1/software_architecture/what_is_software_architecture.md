@@ -14,6 +14,8 @@ Whenever building a software, important decisions must be taken in order to achi
  
 It is part of software architecture defining a architecture that will satisfy user, business and system goals. It is a hard balance to achieve.
 
+## The Importance of Software Architecture
+In short, it is all about building an application on top of a solid foundation. Planning and making great decisions during the early stages of the development process avoid risks and bad consequences in the long term. 
 ## Goals of Software Architecture
 
 It is important to address the main goals of software architecture:
@@ -33,5 +35,3 @@ Some key principles must be kept in mind when designing an architecture:
 * **Communication.** Stakeholders must be easily aware of the architecture.
 * **Identify great engineering decisions.** Knowing to identify and avoid the most common mistakes.
 * **Recursive and incremental strategy.** Building cycles of development focused on creating, modifying and refactoring features or components.
-
-In short, it falls back to software engineering: plan and document everything prematurely, otherwise a drastic change may result in high expenses of time and money for the team.
