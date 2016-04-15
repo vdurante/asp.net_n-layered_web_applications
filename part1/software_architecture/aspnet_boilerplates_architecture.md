@@ -54,7 +54,3 @@ It is important to understand that the Presentation and Web layers may be unifie
 * **Dependency Injection.** Injects dependencies into classes, increasing testability and guaranteeing loose coupling between classes.
 * **Logging.** Logging actions performed by users in the system.
 
-
-
-
-
