@@ -41,7 +41,18 @@ It is important to understand that the Presentation and Web layers may be unifie
 * **Repositories.** Used to perform database operations, such as CRUD (Create, Read, Update, Delete). Therefore, the Application layer doesn't have to operate directly on the entities. Instead, it uses repositories that manipulate the data.
 * **Business Classes.**
 * **Domain Services.** Used to perform domain operations and business rules. Compared to repositories, they implement operations that are not natural (CRUD) for an entity. Domain services have extra logic implemented and use repositories for the basic operations. They are called managers in ABP.
-* **Unit of Work.** 
+* **Unit of Work.** Used to guarantee Atomicity, Consistency, Isolation and Durability (ACID) on database transactions. If a Unit of Work is declared and a transaction fails, the changes in the database are rolled back to the initial state.
+* **Domain Events.** A sigleton object shared between classes, to register, trigger and notify events between classes.
+
+## Infrastructure
+
+* **ORM.** Object-Relational Mapping. The supported ones are Entity-Framework and NHibernate. It maps database operations and tables into object-oriented C#.
+* **DB Migrations.** Management of incremental and reversal changes of database schema.
+
+## Server Side
+
+* **Dependency Injection.** Injects dependencies into classes, increasing testability and guaranteeing loose coupling between classes.
+* **Logging.** Logging actions performed by users in the system.
 
 
 
