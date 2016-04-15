@@ -41,6 +41,7 @@ It is important to notice that all the aspects above can be acquired with time, 
 This book is made for great or soon-to-be great developers. 
   
 ## The daily life of a web developer
+
 A web developer, as any other developer, has its daily activities divided in two parts: theory and practice. A developer constantly switches between studying the theory behind the features it is willing to implement and actually implementing it. Knowing how to do the research is a key feature to become a great professional.
 
 A developer is constantly dealing with:
@@ -52,6 +53,7 @@ A developer is constantly dealing with:
 * **Recursive and incremental approach.** Constant cycle between implementing new features and changing or refactoring existing ones.
 * 
 ## Educational requirements
+
 Having a diploma is not necessary, although these may help:
 
 * Computer Science Bachelor Degree
