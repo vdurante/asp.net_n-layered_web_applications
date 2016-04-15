@@ -6,4 +6,11 @@
   
   An architectural style is a set of principles. Such principles intend to improve partitioning and promote design reuse by providing solutions to frequently recurring problems. It also provides a common language that abstracts the understanding of the problem away from the implementation, facilitating a higher level conversation.
   
-  A great example for the Web is the Model-View-Controller architecture. It doesn't matter the language being implemented on, because the principles are the same.
+  A great example for the Web is the Model-View-Controller architecture. It doesn't matter the programming language of the implementation, because the principles are the same.
+  
+  
+![MVC ](./resources/img/figure2.png)
+
+The simple graph presented above is enough to represent the basic idea of the system's architecture, facilitating communication and understanding.
+
+Applying the design principles, if a company decides to switch database engine, it is just a matter of 
