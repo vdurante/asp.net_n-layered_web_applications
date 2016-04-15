@@ -25,3 +25,5 @@ However, the MVC architecture, as in ASP.NET MVC, falls short in some aspects:
 * **Distributed services.** If the application requires an API, a whole new controller must be implemented, or the existing one must be extended, also over sizing the controller.
 * **Lack of an ORM interface.** The controller access the Model's Object-Relational Mapper directly. A change in the ORM implies a reimplementation of the controller, breaking the abstraction and least knowledge principles.
 * **Background and real time services.** Require implementation inside the controller, over sizing it once again.
+
+The points presented above don't imply 
