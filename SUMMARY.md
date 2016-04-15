@@ -7,6 +7,6 @@
    * [Software Architecture](part1/software_architecture/README.md)
        * [What Is Software Architecture](part1/software_architecture/what_is_software_architecture.md)
        * [N-Layer Architecture](part1/software_architecture/n-layer_architecture.md)
-       * [ASP.NET Boilerplate's Architecture](part1/software_architecture/aspnet_boilerplate_architecture.md)
+       * [ASP.NET Boilerplate's Architecture](part1/software_architecture/aspnet_boilerplates_architecture.md)
        * [Extra Resources](part1/software_architecture/extra_resources.md)
 
