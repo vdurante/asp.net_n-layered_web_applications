@@ -42,14 +42,17 @@ Originally, the MVC layers have this purpose:
 * **Controller.** Layer that has components that handle user interaction, working with the model and selecting a View to be displayed.
 * **View.** Layer that displays the application's user interface (UI).
 
-What Kalkan suggests is to expand these layers into a few others, breaking the multipurpose controllers, implementing extra services and creating interfaces:
+A suggested expansion would be:
 
-* **Presentation.** Provides an interface to the user. This is compared to the View layer, although from Kalkan's perspective, the presentation could be aimed to web, using HTML, CSS and JS, or any other option, such as Mobile applications.
-* **Application.** Mediates between the Presentation and Domain Layers. It is compared to a controller, but lacks the core business logic.
-* **Domain.** Also know as Core, includes the business objects of the application and its rules.
-* **Infrastructure.** Provides generic technical capabilities that support higher layers, such as repositories to work with database.
+* **Data Access Layer (DAL).** Provides access to data stored in a persistent storage. A switch from MySQL to PostgreSQL would affect only this layer. A switch from Entity Framework to N-Hibernate as well.
+* **Entity Objects.** Encapsulates the business model. This is similar to the Model layer, where classes are defined to represent persistent data structure.
+* **Business Logic Layer.** The core of the application. Contains all business logic that is constantly used to modify the business' persistent data.
+* **Business Façade Logic Layer.** Provides a consistent interface that isolates the implementation of the Business Logic Layer from other layers.
+* **Service Interfaces.** A interface used as entry point for consumers to access the Business Logic Layer.
+* **UI Controllers.** Unlike MVC's Controller, the N-Layer Controller is used as a UI Controller. It manipulate data to be displayed by a View.
+* **UI View**. The same as the MVC View.
 
-From Kalkan's perspective, if a application requires a switch from Entity Framework to N-Hibernate, only the infrastructure would be affected, since this change is transparent to other layers. Or, if it requires an application to be segmented into multiple distinct platforms (such as mobile apps and a web portal), it is just a matter of implementing the Presentation layer in platform-specific ways, having the Application layer shared among them, accessed through an API.
+
 
 A generic graph of the N-Layer can be viewed bellow:
 
