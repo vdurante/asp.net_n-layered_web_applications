@@ -46,7 +46,7 @@ A web developer, as any other developer, has its daily activities divided in two
 
 A developer is constantly dealing with:
 
-* **Muable code.** Write code to change instead of writing to last.
+* **Mutable code.** Write code to change instead of writing to last.
 * **Risk management.** Working to reduce risks.
 * **Communication.** Working in a team.
 * **Identifying great engineering decisions.** Identifying and avoiding common mistakes.
