@@ -59,6 +59,3 @@ A generic graph of the N-Layer can be viewed bellow:
 It is possible to see that the Controllers are View-specific. Interface and façade are added to the stack, making the implementation of the Business Logic Layer (Domain Layer) transparent to the layers above it.
 
 It is also possible to notice a new aspect: cross-cutting layers (security, operations, communications). These are layers that are commonly used and accessed by all layers.
-
-![](./resources/img/figure4.png)
-The image above represents Hikalkan's point of view on ABP's N-Layer implementation.
