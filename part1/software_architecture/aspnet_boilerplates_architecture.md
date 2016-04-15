@@ -12,3 +12,5 @@ What Kalkan suggests is to expand these layers into a few others, breaking the m
 From Kalkan's perspective, if a application requires a switch from Entity Framework to N-Hibernate, only the infrastructure would be affected, since this change is transparent to other layers. Or, if it requires an application to be segmented into multiple distinct platforms (such as mobile apps and a web portal), it is just a matter of implementing the Presentation layer in platform-specific ways, having the Application layer shared among them, accessed through an API.
 
 ![](./resources/img/figure4.png)
+
+The image above represents Hikalkan's point of view on ABP's N-Layer implementation.
