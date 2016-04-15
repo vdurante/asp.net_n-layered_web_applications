@@ -34,7 +34,7 @@ The points presented above don't imply that choosing MVC is a bad choice. On the
 
 N-Layer data applications are data applications that are separated into multiple layers, which clearly separate processing into discrete layers. This definition seems a little bit vague, but it is vague enough to fit MVC into it. Therefore, MVC is also a N-Layer architecture.
 
-What is being proposed here is to extend the MVC architecture, as a N-Layer architecture, to fit the requirements of the application. Thinking about the shortfalls presented above, Halil İbrahim Kalkan, author of the [ASP.NET Boilerplate](http://aspnetboilerplate.com/) (ABP) framework, suggests some changes to the default ASP.NET MVC framework, adding some extra layers to it, and modifying the purpose of the existing ones.
+What is being proposed here is to extend the MVC architecture, as a N-Layer architecture, to fit the requirements of the application.
 
 Originally, the MVC layers have this purpose:
 
@@ -51,8 +51,6 @@ A suggested expansion would be:
 * **Service Interfaces.** A interface used as entry point for consumers to access the Business Logic Layer.
 * **UI Controllers.** Unlike MVC's Controller, the N-Layer Controller is used as a UI Controller. It manipulate data to be displayed by a View.
 * **UI View**. The same as the MVC View.
-
-
 
 A generic graph of the N-Layer can be viewed bellow:
 
