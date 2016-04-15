@@ -13,4 +13,4 @@
 
 The simple graph presented above is enough to represent the basic idea of the system's architecture, facilitating communication and understanding.
 
-Applying the design principle of replaceability, if a company decides to switch database engine, it is just a matter of switching the Model layer, instead of rewriting the whole system. 
+Applying the design principle of replaceability, if a company decides to switch database engine, it is just a matter of switching the Model layer, instead of rewriting the whole system. Besides, if the implementation follows the architectural guideliness, other 3 principles come into play: Principle of Least Knowledge, abstraction and 
