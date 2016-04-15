@@ -1,4 +1,4 @@
-# ASP.NET Boilerplate Architecture
+# ASP.NET Boilerplate's Architecture
 
 What Kalkan suggests is to expand these layers into a few others, breaking the multipurpose controllers, implementing extra services and creating interfaces:
 
