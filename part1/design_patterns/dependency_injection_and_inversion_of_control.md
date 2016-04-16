@@ -45,7 +45,13 @@ On the example above, the database object dependency would be passed inside Clas
 
 But how is Class A able to use an object if it is blind towards the object's class? The answer is simple: interfaces. As far as the real database class and the mock database class implements the same interface, Class A will be able to access its methods and attributes.
 
+The image bellow illustrates it quite well:
 
+![](./res/img/figure2.png)
+
+1. **Creation.** Whoever is using Class A, in this case the builder, instantiates Class A in a object.
+2. **Dependency Injection.** The builder also chooses between a set of possible implementations of the desired service and injects it in Class A.
+3. **Usage.** Class A is blind towards the implementation of Service Y, but it uses the Interface of the desired service. Therefore it knows which methods and attributes Service Y has.
 
 ## Consequence
 
@@ -54,4 +60,16 @@ But how is Class A able to use an object if it is blind towards the object's cla
 
 ## Examples
 
-### Example 1: 
+### Example 1: Mock Database
+
+Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager uses DatabaseManager to find a user and then call a method to delete it.
+
+
+#### Bad
+```C#
+public class UserManager {
+    
+}
+```
+
+#### Great
