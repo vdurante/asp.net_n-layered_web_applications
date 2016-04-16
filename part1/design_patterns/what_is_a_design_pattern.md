@@ -51,7 +51,7 @@ The creational design patterns are all about class instantiation, being divided 
 * **Observer.** Defines an one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 * **State.** Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
 * **Strategy.** Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
-* **Template Method.** Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
-* **Visitor.** Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+* **Template Method.** Defines the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+* **Visitor.** Represents an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
 
