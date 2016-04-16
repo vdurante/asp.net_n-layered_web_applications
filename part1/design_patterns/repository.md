@@ -249,7 +249,8 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
     public virtual T GetById(int id)
     {
-        // Uses entity framework to run the query and fetch the response inside the Entity (Model) of type T
+        // Uses entity framework to run the query
+        // &#8627; Automatically Maps the response inside the Entity (Model) of type T
         return _dbContext.Set<T>().Find(id);
     }
 
