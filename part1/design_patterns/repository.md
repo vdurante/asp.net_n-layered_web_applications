@@ -296,9 +296,11 @@ public class UserManager
         this._userRepository.Create(user);
     }
 }
+![](./res/img/figure3.png)
+{%endace%}
 
-
-// usage
+{%ace edit=false, lang='csharp'%}
+**Usage**
 
 UserManager userManager = new UserManager();
 
