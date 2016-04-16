@@ -74,6 +74,7 @@ public class UserManager
     
     public UserManager() {
         // instantiation of DatabaseManager class
+        // this is where the high dependency and tight coupling resides
         
         this._databaseManager = new DatabaseManager();
     }
