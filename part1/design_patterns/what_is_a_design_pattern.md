@@ -25,5 +25,33 @@ The Gang of Four describes 23 classic design patterns, divided into 3 categories
 The creational design patterns are all about class instantiation, being divided into class-creation patterns and object-creation patterns.
 
 * **Abstract Factory.** Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+* **Builder.** Separate the construction of a complex object from its representation so that the same construction process can create different representations. 
+* **Factory Method.**
+* **Prototype.**
+* **Singleton.**
+
+### Structural Design Patterns
+
+* **Adapter.**
+* **Bridge.**
+* **Composite.**
+* **Decorator.**
+* **Facade.**
+* **Flyweight.**
+* **Proxy.**
+
+### Behavioral Design Patterns
+
+* **Chain of Responsibility.**
+* **Command.**
+* **Interpreter.**
+* **Iterator.**
+* **Mediator.**
+* **Memento.**
+* **Observer.**
+* **State.**
+* **Strategy.**
+* **Template Method.**
+* **Visitor.**
 
 
