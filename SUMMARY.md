@@ -11,6 +11,6 @@
        * [Extra Resources](part1/software_architecture/extra_resources.md)
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
-       * [Extra Resources](part1/design_patterns/extra_resources.md)
        * Dependency Injection
+       * [Extra Resources](part1/design_patterns/extra_resources.md)
 
