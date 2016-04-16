@@ -94,6 +94,19 @@ public class UserManager
         this._userRepository.Create(user);
     }
 }
+
+public class Repository<T> : IRepository<T> where T : EntityBase
+{
+    private readonly ApplicationDbContext _dbContext;
+
+    public Repository()
+    {
+        // More dependency and tight coupling
+        this._dbContext = new ApplicationDbContext();
+    }
+
+    // ...
+}
 {%endace%}
 
 Using UserManager:
