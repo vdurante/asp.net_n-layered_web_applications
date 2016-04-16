@@ -101,7 +101,84 @@ userManager.CreateUser("Jonathan", 22);
 
 #### The Good Way
 
+The good way would be creating a User Repository and use it as needed. The Business Logic and Data Access Logic become separate, solving the problems cited above.
+
 {%ace edit=false, lang='csharp'%}
+public class User
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+public class UserRepository
+{
+
+    private ApplicationDbContext _dbContext;
+
+    public UserRepository()
+    {
+        this._dbContext = new ApplicationDbContext();
+    }
+
+    // User Model being passed as argument
+    // Query Object can be built from the user data
+    public void Create(User user)
+    {
+        // Data Mapping from User Model to build Query Object
+        var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", user.Name, user.Age);
+
+        this._dbContext.SqlQuery(query);
+    }
+
+    public User Read(int id)
+    {
+        // read logic
+
+        // Data Mapper would map the response into a User object
+    }
+
+    public void Update(User user)
+    {
+        // update logic
+    }
+
+    public void Delete(User user)
+    {
+        // delete logic   
+    }
+}
+
+public class UserManager
+{
+    private UserRepository _userRepository;
+
+    public UserManager()
+    {
+        this._userRepository = new UserRepository();
+    }
+
+    public void CreateUser(string name, int age)
+    {
+        // some business logic
+        if (age < 18)
+        {
+            throw new UserTooYoungException();
+        }
+
+        // User object (Model) is created using passed arguments
+        User user = new User { Name = name, Age = age };
+
+        this._userRepository.Create(user);
+    }
+}
+
+
+// usage
+
+UserManager userManager = new UserManager();
+
+userManager.CreateUser("Jonathan", 22);
 {%endace%}
 
 #### The Great Way
