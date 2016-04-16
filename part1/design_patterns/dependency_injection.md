@@ -194,4 +194,4 @@ userManager.CreateUser("Jonathan", 22);
 
 The code presented above is a very simple implementation of Dependency Injection, for explanation purposes only.
 
-A Inversion of Control container called [Castle Windsor](http://www.castleproject.org/projects/windsor/) is available for .NET applications. It brings several advantages when working with IoC.
+A Inversion of Control container called [Castle Windsor](http://www.castleproject.org/projects/windsor/) is available for .NET applications. It brings several advantages when working with IoC and Dependency Injection.
