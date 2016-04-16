@@ -39,6 +39,8 @@ If the Business Logic requires this user to be deleted:
 
 ## Consequence
 
+* **Separation of Concerns.** Business logic separated from data access logic.
+* **Least Knowledge Principle.** Business logic is unaware regarding how data is accessed.
 * **Operations on data are centralized.** Repositories centralize all CRUD operations, guaranteeing maintainability, readability and consistency.
 * **Increased testability.** Isolation promotes better unit testing.
 * **Caching strategy.** Data can be easily cached and managed.
