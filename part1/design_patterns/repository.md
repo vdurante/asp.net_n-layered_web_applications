@@ -299,9 +299,8 @@ public class UserManager
 ![](./res/img/figure3.png)
 {%endace%}
 
-{%ace edit=false, lang='csharp'%}
 **Usage**
-
+{%ace edit=false, lang='csharp'%}
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
