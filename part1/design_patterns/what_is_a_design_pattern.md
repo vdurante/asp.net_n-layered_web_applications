@@ -34,7 +34,7 @@ The creational design patterns are all about class instantiation, being divided 
 
 * **Adapter.** Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
 * **Bridge.** Decouple an abstraction from its implementation so that the two can vary independently.
-* **Composite.**
+* **Composite.** Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 * **Decorator.**
 * **Facade.**
 * **Flyweight.**
