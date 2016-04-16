@@ -64,7 +64,7 @@ Let's suppose it is intended to implement a class responsible for managing users
 
 The bad way would run plain SQL straight from the User Manager Class, not to mention security flaws.
 
-{%ace edit=false, lang='csharp'%}
+```cs
 public class UserManager
 {
     private ApplicationDbContext _dbContext;
@@ -92,11 +92,11 @@ public class UserManager
         this._dbContext.SqlQuery(query);
     }
 }
-{%endace%}
+```
 
 **Usage**
 
-{%ace edit=false, lang='csharp'%}
+```cs
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
@@ -183,16 +183,15 @@ public class UserManager
         this._userRepository.Create(user);
     }
 }
-
-{%endace%}
+```
 
 **Usage**
 
-{%ace edit=false, lang='csharp'%}
+```cs
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
-{%endace%}
+```
 
 #### The Great Way
 
@@ -201,7 +200,7 @@ The great solution would include the following approches:
 * **Create a generic Repository.** A generic Repository would avoid repeating code for each Repository for every table present in the database.
 * **Use an Object-Relational Mapper (ORM).** An ORM would automatically map the Models into queries. It also improves separation of concerns and abstraction.
 
-{%ace edit=false, lang='csharp'%}
+```cs
 // Entity Base is a base class for the Entities of Entity Framework
 // It is used for entities that have a integer Id
 public abstract class EntityBase
@@ -297,15 +296,15 @@ public class UserManager
         this._userRepository.Create(user);
     }
 }
-{%endace%}
+```
 
 **Usage**
 
-{%ace edit=false, lang='csharp'%}
+```cs
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
-{%endace%}
+```
 
 
 Although the solution above is already a great advance, there are a few extra problems that will be addressed and solved on the next section: Dependecy Injection.
