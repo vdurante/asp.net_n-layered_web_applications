@@ -82,6 +82,14 @@ public class UserManager
 }
 {%endace%}
 
+**Usage**
+{%ace edit=false, lang='csharp'%}
+// usage
+
+UserManager userManager = new UserManager();
+
+userManager.CreateUser("Jonathan", 22);
+{%endace%}
 #### The Good Way
 
 #### The Great Way
