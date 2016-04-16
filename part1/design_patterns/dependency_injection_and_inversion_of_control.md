@@ -65,7 +65,8 @@ The image bellow illustrates it quite well:
 Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager has a method (CreateUser) that uses DatabaseManager to create an user.
 
 
-#### Bad
+#### The Bad Practice
+
 {%ace edit=false, lang='csharp'%}
 public class UserManager
 {
@@ -81,7 +82,7 @@ public class UserManager
     {
         var user = new User { Name = name, Age = age };
         
-        databaseManager.Users.Insert(user);
+        databaseManager.InsertUser(user);
     }
 }
 {%endace%}
@@ -91,9 +92,57 @@ Using UserManager:
 {%ace edit=false, lang='csharp'%}
 var userManager = new UserManager();
 
-userManager.CreateUser("John", 22);
+userManager.CreateUser("Jonathan", 22);
 {%endace%}
 
-If it becomes necessary to change 
+If it becomes necessary to change DatabaseManager class to MockDatabaseManager, for example, would be necessary to modify the code of UserManager.
 
-#### Great
+#### The Good Practice
+
+{%ace edit=false, lang='csharp'%}
+public class IDatabaseManager
+{
+    private IDatabaseManager databaseManager;
+    
+    public UserManager() {
+        // instantiation of DatabaseManager class
+        
+        this.databaseManager = new DatabaseManager();
+    }
+    
+    public void CreateUser(string name, int age)
+    {
+        var user = new User { Name = name, Age = age };
+        
+        this.databaseManager.Users.Insert(user);
+    }
+}
+{%endace%}
+
+{%ace edit=false, lang='csharp'%}
+public class UserManager
+{
+    private IDatabaseManager databaseManager;
+    
+    public UserManager() {
+        // instantiation of DatabaseManager class
+        
+        this.databaseManager = new DatabaseManager();
+    }
+    
+    public void CreateUser(string name, int age)
+    {
+        var user = new User { Name = name, Age = age };
+        
+        this.databaseManager.Users.Insert(user);
+    }
+}
+{%endace%}
+
+Using UserManager:
+
+{%ace edit=false, lang='csharp'%}
+var userManager = new UserManager();
+
+userManager.CreateUser("Jonathan", 22);
+{%endace%}
