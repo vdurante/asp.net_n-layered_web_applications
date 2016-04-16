@@ -67,7 +67,6 @@ Let's suppose a class responsible for managing users. This class, called UserMan
 
 #### Bad
 {%ace edit=false, lang='csharp'%}
-```C#
 public class UserManager
 {
     private DatabaseManager databaseManager;
@@ -83,7 +82,7 @@ public class UserManager
         databaseManager.Users.Insert(user);
     }
 }
-```
+{%endace%}
 
 If it becomes necessary to change 
 
