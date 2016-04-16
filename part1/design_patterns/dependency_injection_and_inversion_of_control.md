@@ -16,9 +16,14 @@ The approach presented above induces a tight coupling and high dependency of Cla
 
 * **Thigh Coupling. ** When a group of classes is highly dependent on one another.
 * **Break of the Single Responsibility principle.** Class A assumes too many responsibilities.
-* **Break of the Principle of Least Knowledge.**
+* **Break of the Principle of Least Knowledge.** Class A knows too much about Classes Y and Z.
 * **Lack of abstraction.** Class A uses concrete Classes Y and Z.
+* **Low testability.** 
 
+This approach induces some unwanted consequences:
+
+* If it becomes necessary to replace or modify Class A's dependencies (Y and Z), a change in the source code of A is mandatory.
+* 
 
 ## Solution
 
