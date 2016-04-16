@@ -13,6 +13,6 @@
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
        * [Repository](part1/design_patterns/repository.md)
-       * [Dependency Injection And Inversion Of Control](part1/design_patterns/dependency_injection_and_inversion_of_control.md)
+       * [Dependency Injection](part1/design_patterns/dependency_injection_and_inversion_of_control.md)
        * [Extra Resources](part1/design_patterns/extra_resources.md)
 
