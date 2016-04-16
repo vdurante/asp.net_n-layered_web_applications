@@ -178,5 +178,15 @@ UserManager userManager = new UserManager(userRepository);
 
 userManager.CreateUser("Jonathan", 22);
 
+// Mock database with integer Id
+
+ApplicationDbContext dbContext = new ApplicationDbContext(mock: true);
+
+Repository<User> userRepository = new Repository<User>(dbContext);
+
+UserManager userManager = new UserManager(userRepository);
+
+userManager.CreateUser("Jonathan", 22);
+
 {%endace%}
 
