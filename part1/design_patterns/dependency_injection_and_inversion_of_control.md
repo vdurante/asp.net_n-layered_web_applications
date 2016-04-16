@@ -51,7 +51,7 @@ The image bellow illustrates it quite well:
 
 1. **Creation.** Whoever is using Class A, in this case the builder, instantiates Class A in a object.
 2. **Dependency Injection.** The builder also chooses between a set of possible implementations of the desired service and injects it in Class A.
-3. **Usage.** Class A is blind towards the implementation of Service Y, but it uses the Interface of the desired service. Therefore it knows which methods and attributes Service Y has.
+3. **Usage.** Class A is blind towards the implementation of Service Y, but it uses the Interface of the desired service. Therefore, it knows which methods and attributes Service Y has.
 
 ## Consequence
 
@@ -84,5 +84,7 @@ public class UserManager
     }
 }
 ```
+
+If it becomes necessary to change 
 
 #### Great
