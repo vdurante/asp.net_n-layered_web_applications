@@ -189,3 +189,4 @@ UserManager userManager = new UserManager(mockDatabaseManager);
 
 User user = userManager.GetUser(1);
 {%endace%}
+
