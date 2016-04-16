@@ -28,12 +28,12 @@ The creational design patterns are all about class instantiation, being divided 
 * **Builder.** Separates the construction of a complex object from its representation so that the same construction process can create different representations. 
 * **Factory Method.** Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 * **Prototype.** Specifies the kinds of objects to create using a prototypical instance, and creates new objects by copying this prototype.
-* **Singleton.** Ensure a class only has one instance, and provide a global point of access to it.
+* **Singleton.** Ensures a class only has one instance, and provides a global point of access to it.
 
 ### Structural Design Patterns
 
-* **Adapter.** Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
-* **Bridge.** Decouple an abstraction from its implementation so that the two can vary independently.
+* **Adapter.** Converts the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
+* **Bridge.** Decouples an abstraction from its implementation so that the two can vary independently.
 * **Composite.** Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 * **Decorator.** Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 * **Facade.** Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
