@@ -62,4 +62,3 @@ Having a diploma is not necessary, although these may help:
 * Courses or previous knowledge: Software Engineering, Software Architecture, Design Patterns, Robust Programming, Web Development, C#, ASP.NET MVC Framework, and many others
 
 This book aims to bring the required knowledge in a simple way. Extra research may be required and strongly advised.
-
