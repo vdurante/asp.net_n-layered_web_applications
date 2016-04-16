@@ -161,31 +161,22 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 // Real database with integer Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
-
 Repository<User> userRepository = new Repository<User>(dbContext);
-
 UserManager userManager = new UserManager(userRepository);
-
 userManager.CreateUser("Jonathan", 22);
 
 // Real database with long Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
-
 Repository<User> userRepository = new LongRepository<User>(dbContext);
-
 UserManager userManager = new UserManager(userRepository);
-
 userManager.CreateUser("Jonathan", 22);
 
 // Mock database with integer Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: true);
-
 Repository<User> userRepository = new Repository<User>(dbContext);
-
 UserManager userManager = new UserManager(userRepository);
-
 userManager.CreateUser("Jonathan", 22);
 ```
 
