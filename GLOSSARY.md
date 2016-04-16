@@ -1,5 +1,2 @@
 # Glossary
 
-## teste
-
-teste
