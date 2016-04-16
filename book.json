@@ -1,7 +1,8 @@
 {
     "plugins": [
         "image-captions",
-        "ace"
+        "ace",
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "image-captions": {
