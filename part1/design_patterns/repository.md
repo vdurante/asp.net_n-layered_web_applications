@@ -72,7 +72,55 @@ Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
 TEntity Load(TPrimaryKey id);
 ```
 
+**Getting a list of entities**
 
+```csharp
+List<TEntity> GetAllList();
+Task<List<TEntity>> GetAllListAsync();
+List<TEntity> GetAllList(Expression<Func<TEntity, bool>> predicate);
+Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
+IQueryable<TEntity> GetAll();
+```
+
+### Insert
+
+```csharp
+TEntity Insert(TEntity entity);
+Task<TEntity> InsertAsync(TEntity entity);
+TPrimaryKey InsertAndGetId(TEntity entity);
+Task<TPrimaryKey> InsertAndGetIdAsync(TEntity entity);
+TEntity InsertOrUpdate(TEntity entity);
+Task<TEntity> InsertOrUpdateAsync(TEntity entity);
+TPrimaryKey InsertOrUpdateAndGetId(TEntity entity);
+Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
+```
+
+### Update
+
+```csharp
+TEntity Update(TEntity entity);
+Task<TEntity> UpdateAsync(TEntity entity);
+```
+
+### Delete
+
+```csharp
+TEntity Update(TEntity entity);
+Task<TEntity> UpdateAsync(TEntity entity);
+```
+
+### Others
+
+```csharp
+int Count();
+Task<int> CountAsync();
+int Count(Expression<Func<TEntity, bool>> predicate);
+Task<int> CountAsync(Expression<Func<TEntity, bool>> predicate);
+long LongCount();
+Task<long> LongCountAsync();
+long LongCount(Expression<Func<TEntity, bool>> predicate);
+Task<long> LongCountAsync(Expression<Func<TEntity, bool>> predicate);
+```
 
 ## Examples
 
