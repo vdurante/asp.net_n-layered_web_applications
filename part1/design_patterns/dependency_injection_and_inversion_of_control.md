@@ -78,11 +78,17 @@ public class UserManager
         this._databaseManager = new DatabaseManager();
     }
     
-    public void CreateUser(string name, int age)
+    public User GetUser(int id)
     {
-        var user = new User { Name = name, Age = age };
-        
-        this._databaseManager.InsertUser(user);
+        User user = this._databaseManager.GetUser(id);
+
+        // if user doesn't exist, throws an exception
+        if (user == null)
+        {
+            throw new UserNotFoundException();
+        }
+
+        return user;
     }
 }
 {%endace%}
@@ -92,7 +98,7 @@ Using UserManager:
 {%ace edit=false, lang='csharp'%}
 var userManager = new UserManager();
 
-userManager.CreateUser("Jonathan", 22);
+User user = userManager.GetUser(1);
 {%endace%}
 
 If it becomes necessary to change DatabaseManager class to MockDatabaseManager, for example, would be necessary to modify the code of UserManager.
