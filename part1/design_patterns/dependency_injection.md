@@ -68,7 +68,7 @@ Let's modify the UserManager implemented on the last chapter to use Dependency I
 
 #### The Bad Way
 
-{%ace edit=false, lang='csharp'%}
+```csharp
 public class UserManager
 {
     private Repository<User> _userRepository;
@@ -107,7 +107,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
     // ...
 }
-{%endace%}
+```
 
 If, for instance, it is intended to use a mock database for testing purposes, a change in the code of Repository class would be required, since it instantiates the ApplicationDbContext inside its constructor.
 
@@ -115,7 +115,7 @@ Also, if a new Repository for tables that has Id as a long Type is implemented a
 
 #### The Great Way
 
-{%ace edit=false, lang='csharp'%}
+```cs
 public class UserManager
 {
     private IRepository<User> _userRepository;
@@ -153,7 +153,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
     // ...
 }
-{%endace%}
+```
 
 **Usage**
 
