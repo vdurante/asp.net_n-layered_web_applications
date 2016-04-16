@@ -16,7 +16,7 @@ The Gang of Four describes four essential elements:
 * **Solution.** The elements that make up the design, their relationships, responsibilities, and collaborations.
 * **Consequences.** Results and trade-offs of applying the pattern.
 
-## The Design Patterns that matter.
+## The Gang Of Four's Design Patterns.
 
 The Gang of Four describes 23 classic design patterns, divided into 3 categories: creational, structural, and behavioral.
 
@@ -24,11 +24,11 @@ The Gang of Four describes 23 classic design patterns, divided into 3 categories
 
 The creational design patterns are all about class instantiation, being divided into class-creation patterns and object-creation patterns.
 
-* **Abstract Factory.** Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-* **Builder.** Separates the construction of a complex object from its representation so that the same construction process can create different representations. 
-* **Factory Method.** Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
-* **Prototype.** Specifies the kinds of objects to create using a prototypical instance, and creates new objects by copying this prototype.
-* **Singleton.** Ensures a class only has one instance, and provides a global point of access to it.
+* **Abstract Factory.**
+* **Builder.** 
+* **Factory Method.**
+* **Prototype.**
+* **Singleton.**
 
 ### Structural Design Patterns
 
