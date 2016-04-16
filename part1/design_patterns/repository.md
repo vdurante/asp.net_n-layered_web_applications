@@ -58,7 +58,7 @@ There is also a more generic approach, using a Type of the database table. A exa
 
 ### Example 1: A Repository Interface
 
-Suppose a User Manager which contains core business logic regarding user management.
+Let's suppose it is intended to implement a class responsible for managing users, called UserManager. This class should contain the business logic of user management. It this scenarion, there is only a simple rule: the user can't be younger than 18 years old.
 
 #### The Bad Way
 
@@ -308,4 +308,4 @@ userManager.CreateUser("Jonathan", 22);
 {%endace%}
 
 
-Although the solution above is already a great advance, there are a few extra problems that will be addressed and solved on the next section: Dependecy Injection
+Although the solution above is already a great advance, there are a few extra problems that will be addressed and solved on the next section: Dependecy Injection.
