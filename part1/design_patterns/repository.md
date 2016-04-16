@@ -62,7 +62,7 @@ Suppose a User Manager which contains core business logic regarding user managem
 
 #### The Bad Way
 
-The bad way would run SQL straight from the User Manager Class.
+The bad way would run plain SQL straight from the User Manager Class, not to mention security flaws.
 
 {%ace edit=false, lang='csharp'%}
 public class UserManager
@@ -101,7 +101,11 @@ userManager.CreateUser("Jonathan", 22);
 
 #### The Good Way
 
-The good way would be creating a User Repository and use it as needed. The Business Logic and Data Access Logic become separate, solving the problems cited above.
+The good way would be creating a User Repository and use it as needed. The Business Logic and Data Access Logic become separate, solving a few problems cited above.
+
+Due to the fact that each table has a corresponding repository, it is still not the best solution possible. The Don't Repeat Yourself (DRY) principle is being broken, since the repositories will be repeated.
+
+There is also an extra problem regarding the execution of SQL queries. The usage of a Object-Oriented Mapper is strongly suggested, such as Entity Framework.
 
 {%ace edit=false, lang='csharp'%}
 public class User
@@ -126,6 +130,7 @@ public class UserRepository
     public void Create(User user)
     {
         // Data Mapping from User Model to build Query Object
+        // This is a very primitive Object Mapper
         var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", user.Name, user.Age);
 
         this._dbContext.SqlQuery(query);
@@ -182,3 +187,5 @@ userManager.CreateUser("Jonathan", 22);
 {%endace%}
 
 #### The Great Way
+
+The great way would be creating a generic Repository.
