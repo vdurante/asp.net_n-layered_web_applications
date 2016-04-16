@@ -112,6 +112,7 @@ public interface IDatabaseManager
     User GetUser(int id);
 }
 
+// implements interface IDatabaseManager
 public class DatabaseManager : IDatabaseManager
 {
     public DatabaseManager()
@@ -125,6 +126,7 @@ public class DatabaseManager : IDatabaseManager
     }
 }
 
+// implements interface IDatabaseManager
 public class MockDatabaseManager : IDatabaseManager
 {
     public MockDatabaseManager()
@@ -181,7 +183,7 @@ User user = userManager.GetUser(1);
 
 // using mock database
 
-MockDatabaseManager mockDatabaseManager = new DatabaseManager();
+MockDatabaseManager mockDatabaseManager = new MockDatabaseManager();
 
 UserManager userManager = new UserManager(mockDatabaseManager);
 
