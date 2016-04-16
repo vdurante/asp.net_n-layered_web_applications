@@ -292,3 +292,5 @@ UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
 {%endace%}
+
+Although the solution above is already a great advance, there are a few extra problems that will be addressed on the next section: Dependecy Injection
