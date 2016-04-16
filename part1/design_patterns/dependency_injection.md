@@ -146,7 +146,6 @@ public class Repository<T> : IRepository<T> where T : EntityBase
     // Dependency is passed as an argument in the constructor
     public Repository(ApplicationDbContext dbContext)
     {
-        // More dependency and tight coupling
         this._dbContext = new dbContext();
     }
 
