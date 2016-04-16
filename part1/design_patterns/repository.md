@@ -49,4 +49,4 @@ If the Business Logic requires this user to be deleted:
 * **Complex behavior.** Complex relationships and calculated fields can be enforced inside a repository, such as Polymorphism, that is not supported by databases, but can easily be implemented in a Repository, being transparent to the business logic.
 
 
-
+## Examples
