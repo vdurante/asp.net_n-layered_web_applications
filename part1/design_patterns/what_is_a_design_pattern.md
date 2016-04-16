@@ -32,7 +32,7 @@ The creational design patterns are all about class instantiation, being divided 
 
 ### Structural Design Patterns
 
-* **Adapter.**
+* **Adapter.** Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
 * **Bridge.**
 * **Composite.**
 * **Decorator.**
