@@ -116,7 +116,8 @@ public class User
     public string Name { get; set; }
     public int Age { get; set; }
 }
-
+```
+```cs
 public class UserRepository
 {
 
@@ -158,7 +159,8 @@ public class UserRepository
         // delete logic   
     }
 }
-
+```
+```cs
 public class UserManager
 {
     private UserRepository _userRepository;
