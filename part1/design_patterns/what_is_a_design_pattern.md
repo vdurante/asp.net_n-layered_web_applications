@@ -58,7 +58,8 @@ The behavioral design patterns are all about classes' objects communication. It 
 * **Template Method.**
 * **Visitor.**
 
-Although it is extremely advised to learn, understand and apply those patterns, not all of them are entirely necessary to work on a N-Layer Architecture. Besides, some modern patterns are not described by the Gang of Four's book.
-
 ## The Design Patterns That Matter.
 
+Although it is extremely advised to learn, understand and apply the patterns presented above, not all of them are entirely necessary to work on a N-Layer Architecture. Moreover, some modern patterns are not described by the Gang of Four's book.
+
+Design patterns should be applied as needed, varying from application to application.
