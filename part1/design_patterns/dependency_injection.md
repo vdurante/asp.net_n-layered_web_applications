@@ -157,7 +157,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
 **Usage**
 
-{%ace edit=false, lang='csharp'%}
+```C#
 // Real database with integer Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
@@ -187,7 +187,7 @@ Repository<User> userRepository = new Repository<User>(dbContext);
 UserManager userManager = new UserManager(userRepository);
 
 userManager.CreateUser("Jonathan", 22);
-{%endace%}
+```
 
 
 ## Observations
