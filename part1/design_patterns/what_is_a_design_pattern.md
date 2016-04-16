@@ -16,7 +16,7 @@ The Gang of Four describes four essential elements:
 * **Solution.** The elements that make up the design, their relationships, responsibilities, and collaborations.
 * **Consequences.** Results and trade-offs of applying the pattern.
 
-## The Gang Of Four's patterns.
+## The Design Patterns that matter.
 
 The Gang of Four describes 23 classic design patterns, divided into 3 categories: creational, structural, and behavioral.
 
