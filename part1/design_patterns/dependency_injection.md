@@ -168,5 +168,15 @@ UserManager userManager = new UserManager(userRepository);
 
 userManager.CreateUser("Jonathan", 22);
 
+// Real database with long Id
+
+ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
+
+Repository<User> userRepository = new LongRepository<User>(dbContext);
+
+UserManager userManager = new UserManager(userRepository);
+
+userManager.CreateUser("Jonathan", 22);
+
 {%endace%}
 
