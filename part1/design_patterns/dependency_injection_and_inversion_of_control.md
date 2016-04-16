@@ -39,11 +39,19 @@ This clearly becomes impractical over time and complexity.
 
 The most common solutions presented are Dependency Injection and Service Locator. The former seems more interesting, therefore the latter won't be explained in details.
 
-The Dependency Injection pattern dictates that whenever a class has a dependency, it should be passed (or injected) as a parameter into it.
+The Dependency Injection pattern dictates that whenever a class has a dependency, it should be passed (or injected) as a parameter into it. It is a matter of not instantiating the dependencies explicitly. Just declare the dependencies and let whoever is using this class to pass the dependency.
 
-On the example above, the database class dependency would be passed inside Class A as a parameter. Therefore, Class A becomes blind towards the implementation of the database class. Whether it is a mock database or a real database is not important, as long as Class A is able to access its methods and attributes.
+On the example above, the database object dependency would be passed inside Class A as a parameter. Therefore, Class A becomes blind towards the implementation of the database class. Whether it is a mock database or a real database is not important, as long as Class A is able to access its methods and attributes.
+
+But how is Class A able to use an object if it is blind towards the object's class? The answer is simple: interfaces. As far as the real database class and the mock database class implements the same interface, Class A will be able to access its methods and attributes.
 
 
 
 ## Consequence
 
+
+
+
+## Examples
+
+### Example 1: 
