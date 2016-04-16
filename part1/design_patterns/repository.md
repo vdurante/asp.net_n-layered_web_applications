@@ -98,9 +98,8 @@ public class UserManager
 
 ```cs
 UserManager userManager = new UserManager();
-
 userManager.CreateUser("Jonathan", 22);
-{%endace%}
+```
 
 #### The Good Way
 
@@ -110,7 +109,7 @@ Due to the fact that each table has a corresponding repository, it is still not 
 
 There is also an extra problem regarding the execution of SQL queries. The usage of a Object-Oriented Mapper is strongly suggested, such as Entity Framework.
 
-{%ace edit=false, lang='csharp'%}
+```cs
 public class User
 {
     public int Id { get; set; }
@@ -189,7 +188,6 @@ public class UserManager
 
 ```cs
 UserManager userManager = new UserManager();
-
 userManager.CreateUser("Jonathan", 22);
 ```
 
@@ -234,10 +232,10 @@ public interface IRepository<T> where T : EntityBase
 // &#8627; This repository only works for Entities (Models) that inherits from EntityBase
 // &#8627; This repository is suitable for entities that have an integer Id
 // This repository implements the methods forced by the IRepository
-// &#8627; GetById
-// &#8627; Create
-// &#8627; Update
-// &#8627; Delete
+// ↳  GetById
+// ↳ Create
+// ↳ Update
+// ↳ Delete
 public class Repository<T> : IRepository<T> where T : EntityBase
 {
     private ApplicationDbContext _dbContext;
@@ -250,7 +248,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
     public virtual T GetById(int id)
     {
         // Uses entity framework to run the query
-        // &#8627; Automatically Maps the response inside the Entity (Model) of type T
+        // ↳ Automatically Maps the response inside the Entity (Model) of type T
         return _dbContext.Set<T>().Find(id);
     }
 
