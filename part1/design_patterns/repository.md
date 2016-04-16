@@ -217,14 +217,12 @@ public class User : EntityBase
 ```csharp
 public interface IRepository<T> where T : EntityBase
 {
-    int GetById(int id);
+    T GetById(int id);
     void Create(T entity);
     void Update(T entity);
     void Delete(T entity);
 }
-```
 
-```cs
 // Generic Repository
 // This repository implements interface IRepository
 // Also has a Type T of EntityBase
