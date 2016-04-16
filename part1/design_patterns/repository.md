@@ -58,11 +58,28 @@ There is also a more generic approach, using a Type of the database table. A exa
 
 ### Example 1: A Repository Interface
 
-
+Suppose a User Manager which contains core business logic regarding user management.
 
 #### The Bad Way
-{%ace edit=false, lang='csharp'%}
 
+The bad way would run SQL straight from the User Manager Class.
+{%ace edit=false, lang='csharp'%}
+public class UserManager
+{
+    private ApplicationDbContext _dbContext;
+
+    public UserManager()
+    {
+        this._dbContext = new ApplicationDbContext();
+    }
+
+    public void CreateUser(string name, int age)
+    {
+        var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", name, age);
+
+        this._dbContext.SqlQuery(query);
+    }
+}
 {%endace%}
 
 #### The Good Way
