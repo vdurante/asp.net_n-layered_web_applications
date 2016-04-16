@@ -49,14 +49,16 @@ The image bellow illustrates it quite well:
 
 ![](./res/img/figure2.png)
 
-1. **Creation.** Whoever is using Class A, in this case the builder, instantiates Class A in a object.
+1. **Creation.** Whoever is using Class A, in this case the builder, instantiates Class A.
 2. **Dependency Injection.** The builder also chooses between a set of possible implementations of the desired service and injects it in Class A.
-3. **Usage.** Class A is blind towards the implementation of Service Y, but it uses the Interface of the desired service. Therefore, it knows which methods and attributes Service Y has.
+3. **Usage.** Class A is blind towards the implementation of Service Y, but it uses the Interface of the desired service. Therefore, it knows which methods and attributes Service Y has, being able to make use of the service.
 
 ## Consequence
 
-
-
+* **Decoupled classes from dependencies.** Dependencies can be updated or replaced with minimal or no changes to the classes' source code.
+* **Concrete implementation of dependencies not known at compile time.**
+* **Increased testability.** Classes can be tested in isolation.
+* **Less responsibility to classes.** Classes don't manage their own dependencies and their lifetimes.
 
 ## Examples
 
