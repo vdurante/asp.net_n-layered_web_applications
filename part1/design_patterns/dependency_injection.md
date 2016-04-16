@@ -68,7 +68,7 @@ Let's modify the UserManager implemented on the last chapter to use Dependency I
 
 #### The Bad Way
 
-```csharp
+```cs
 public class UserManager
 {
     private Repository<User> _userRepository;
