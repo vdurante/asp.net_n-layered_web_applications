@@ -14,6 +14,7 @@ The approach presented above induces a tight coupling and high dependency of Cla
  
 ## Problem
 
+* **Thigh Coupling. ** 
 
 
 ## Solution
