@@ -33,7 +33,7 @@ The creational design patterns are all about class instantiation, being divided 
 ### Structural Design Patterns
 
 * **Adapter.** Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
-* **Bridge.**
+* **Bridge.** Decouple an abstraction from its implementation so that the two can vary independently.
 * **Composite.**
 * **Decorator.**
 * **Facade.**
@@ -42,8 +42,8 @@ The creational design patterns are all about class instantiation, being divided 
 
 ### Behavioral Design Patterns
 
-* **Chain of Responsibility.**
-* **Command.**
+* **Chain of Responsibility.** Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it. 
+* **Command.** Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations. 
 * **Interpreter.**
 * **Iterator.**
 * **Mediator.**
