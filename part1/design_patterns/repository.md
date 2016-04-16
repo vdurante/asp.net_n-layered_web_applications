@@ -37,6 +37,10 @@ If the Business Logic requires this user to be deleted:
 2. Data Mapper maps the user Model into a Query Object.
 3. Query is executed in Data Source, response is sent to repository, then to the method that required the user to be deleted.
 
+The implementation above is possible through the use of a Repository interface. The interface describes the structure of the repository and for each table in the database, a Repository and its methods are implemented.
+
+There is also a more generic approach, using a Type of the database table. A example is present in the Examples section bellow.
+
 ## Consequence
 
 * **Separation of Concerns.** Business logic separated from data access logic.
@@ -54,3 +58,6 @@ If the Business Logic requires this user to be deleted:
 
 ### Example 1: A Repository Interface
 
+{%ace edit=false, lang='csharp'%}
+
+{%endace%}
