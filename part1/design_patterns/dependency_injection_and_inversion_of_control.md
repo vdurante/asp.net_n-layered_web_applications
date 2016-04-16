@@ -62,7 +62,7 @@ The image bellow illustrates it quite well:
 
 ### Example 1: Mock Database
 
-Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager uses DatabaseManager to find a user and then call a method to delete it.
+Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager uses DatabaseManager to create a user and then call a method to delete it.
 
 
 #### Bad
