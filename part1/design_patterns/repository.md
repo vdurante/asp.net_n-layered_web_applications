@@ -188,4 +188,107 @@ userManager.CreateUser("Jonathan", 22);
 
 #### The Great Way
 
-The great way would be creating a generic Repository.
+The great solution would include the following approches:
+
+* **Create a generic Repository.** A generic Repository would avoid repeating code for each Repository for every table present in the database.
+* **Use a Object-Relational Mapper (ORM).** An ORM would automatically map the Models into queries.
+
+{%ace edit=false, lang='csharp'%}
+// Entity Base is a base class for the Entities of Entity Framework
+// It is used for entities that have a integer Id
+public abstract class EntityBase
+{
+    public int Id { get; protected set; }
+}
+
+// User Entity (Model) inherits EntityBase, forcing it to have an Id of type integer
+public class User : EntityBase
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+// IRepository is an interface
+// Forces implementations of this interface to have certain methods
+// In this case, GetById, Create, Update, Delete
+// IRepository has a Type T of EntityBase
+public interface IRepository<T> where T : EntityBase
+{
+    T GetById(int id);
+    void Create(T entity);
+    void Update(T entity);
+    void Delete(T entity);
+}
+
+
+// Generic Repository
+// This repository implements interface IRepository
+// Also has a Type T of EntityBase
+// This means that this repository only works for Entities (Models) that inherits from EntityBase
+// Therefore, this repository is suitable for entities that have an integer Id
+// This repository implements the methods forced by the IRepository (GetById, Create, Update, Delete)
+public class Repository<T> : IRepository<T> where T : EntityBase
+{
+    private readonly ApplicationDbContext _dbContext;
+
+    public Repository()
+    {
+        this._dbContext = new ApplicationDbContext();
+    }
+
+    public virtual T GetById(int id)
+    {
+        // Uses entity framework to run the query and fetch the response inside the Entity (Model) of type T
+        return _dbContext.Set<T>().Find(id);
+    }
+
+    public void Create(T entity)
+    {
+        _dbContext.Set<T>().Add(entity);
+        _dbContext.SaveChanges();
+    }
+
+    public void Update(T entity)
+    {
+        _dbContext.Entry(entity).State = EntityState.Modified;
+        _dbContext.SaveChanges();
+    }
+
+    public void Delete(T entity)
+    {
+        _dbContext.Set<T>().Remove(entity);
+        _dbContext.SaveChanges();
+    }
+}
+
+public class UserManager
+{
+    private Repository<User> _userRepository;
+
+    public UserManager()
+    {
+        this._userRepository = new Repository<User>();
+    }
+
+    public void CreateUser(string name, int age)
+    {
+        // some business logic
+        if (age < 18)
+        {
+            throw new UserTooYoungException();
+        }
+
+        // User object (Model) is created using passed arguments
+        User user = new User { Name = name, Age = age };
+
+        this._userRepository.Create(user);
+    }
+}
+
+
+// usage
+
+UserManager userManager = new UserManager();
+
+userManager.CreateUser("Jonathan", 22);
+{%endace%}
