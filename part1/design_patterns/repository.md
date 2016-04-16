@@ -56,7 +56,7 @@ There is also a more generic approach, using a Type of the database table. A exa
 ## Examples
 
 
-### Example 1: A Repository Interface
+### Example 1: An User Manager and a Repository Interface
 
 Let's suppose it is intended to implement a class responsible for managing users, called UserManager. This class should contain the business logic of user management. It this scenarion, there is only a simple rule: the user can't be younger than 18 years old.
 
