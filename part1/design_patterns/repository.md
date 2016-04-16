@@ -212,25 +212,24 @@ public class User : EntityBase
     public string Name { get; set; }
     public int Age { get; set; }
 }
+```
 
-// IRepository is an interface
-// Forces implementations of this interface to have certain methods
-// In this case, GetById, Create, Update, Delete
-// IRepository has a Type T of EntityBase
+```csharp
 public interface IRepository<T> where T : EntityBase
 {
-    T GetById(int id);
+    int GetById(int id);
     void Create(T entity);
     void Update(T entity);
     void Delete(T entity);
 }
+```
 
-
+```cs
 // Generic Repository
 // This repository implements interface IRepository
 // Also has a Type T of EntityBase
-// &#8627; This repository only works for Entities (Models) that inherits from EntityBase
-// &#8627; This repository is suitable for entities that have an integer Id
+// ↳ This repository only works for Entities (Models) that inherits from EntityBase
+// ↳ This repository is suitable for entities that have an integer Id
 // This repository implements the methods forced by the IRepository
 // ↳  GetById
 // ↳ Create
@@ -270,7 +269,9 @@ public class Repository<T> : IRepository<T> where T : EntityBase
         _dbContext.SaveChanges();
     }
 }
+```
 
+```cs
 public class UserManager
 {
     private Repository<User> _userRepository;
