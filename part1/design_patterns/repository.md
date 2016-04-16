@@ -15,6 +15,34 @@ It intends to create an abstraction for manipulating data present in the persist
 
 ## Solution
 
-Using a repository to separate the database CRUD operations and map the results of these operations to a object (called Model).
+Using a repository to separate the database CRUD operations and map the results of these operations to an object (called Model in this case).
+
+![](./res/img/figure3.png)
+
+The image above represents the general idea of a repository:
+
+Whenever a Business Logic needs to perform a query, it calls a method from the Repository. This method builds a Query Object (such as a SQL statement) and invokes the Data Source to execute the desired operation. Once the operation is executed, a response is sent back to the Repository by the Data Source. The Data Mapper translates this response into a Model and sends the response back to the Business Logic.
+
+If the Business Logic requires a user to be fetched:
+
+1. Code calls the Repository's method FindById with the id of the desired user (desired_id) as argument.
+2. Repository builds a Query Object, such as *SELECT * FROM Users WHERE Id=:desired_id*, and sends it to the Data Source, in this case a Database.
+3. If found, Data Source fetches the user and sends a response containing the User's info.
+4. Data Mapper receives this data and automatically maps it into a Model.
+5. Repository sends the Model back to the method that required the user.
+
+If the Business Logic requires this user to be deleted:
+
+1. Code call the Repository's method Delete with the user Model as argument.
+2. Data Mapper maps the user Model into a Query Object.
+3. Query is executed in Data Source, response is sent to repository, then to the method that required the user to be deleted.
 
 ## Consequence
+
+* **Operations on data are centralized.** Repositories centralize all CRUD operations, guaranteeing maintainability, readability and consistency.
+* **Increased testability.** Isolation promotes better unit testing.
+* **Caching strategy.** Data can be easily cached and managed.
+* ****
+
+
+
