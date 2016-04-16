@@ -50,3 +50,7 @@ If the Business Logic requires this user to be deleted:
 
 
 ## Examples
+
+
+### Example 1: A Repository Interface
+
