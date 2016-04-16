@@ -15,5 +15,5 @@
        * [Repository](part1/design_patterns/repository.md)
        * [Dependency Injection](part1/design_patterns/dependency_injection.md)
        * [Extra Resources](part1/design_patterns/extra_resources.md)
-   * Object-Oriented Programming
+   * [Object-Oriented Programming](part1/object-oriented_programming.md)
 
