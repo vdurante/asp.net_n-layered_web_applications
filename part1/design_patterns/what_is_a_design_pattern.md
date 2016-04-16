@@ -45,9 +45,9 @@ The creational design patterns are all about class instantiation, being divided 
 * **Chain of Responsibility.** Avoids coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it. 
 * **Command.** Encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations. 
 * **Interpreter.** Given a language, defines a represention for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
-* **Iterator.** Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
-* **Mediator.** Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
-* **Memento.** Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later. 
+* **Iterator.** Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+* **Mediator.** Defines an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+* **Memento.** Without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later. 
 * **Observer.** Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 * **State.** Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 * **Strategy.** Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
