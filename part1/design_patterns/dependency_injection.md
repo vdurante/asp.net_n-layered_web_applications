@@ -157,7 +157,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
 **Usage**
 
-```csharp
+```cs
 // Real database with integer Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
