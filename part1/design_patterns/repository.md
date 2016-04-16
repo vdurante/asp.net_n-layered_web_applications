@@ -241,7 +241,7 @@ public interface IRepository<T> where T : EntityBase
 // &#8627; Delete
 public class Repository<T> : IRepository<T> where T : EntityBase
 {
-    private readonly ApplicationDbContext _dbContext;
+    private ApplicationDbContext _dbContext;
 
     public Repository()
     {
