@@ -135,7 +135,10 @@ public class UserRepository
     {
         // Data Mapping from User Model to build Query Object
         // This is a very primitive Object Mapper
-        var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", user.Name, user.Age);
+        var query = String.Format(
+            "INSERT INTO Users (Name, Age) VALUES ({0}, {1});",
+            user.Name,
+            user.Age);
 
         this._dbContext.SqlQuery(query);
     }
@@ -228,9 +231,13 @@ public interface IRepository<T> where T : EntityBase
 // Generic Repository
 // This repository implements interface IRepository
 // Also has a Type T of EntityBase
-// This means that this repository only works for Entities (Models) that inherits from EntityBase
-// Therefore, this repository is suitable for entities that have an integer Id
-// This repository implements the methods forced by the IRepository (GetById, Create, Update, Delete)
+// &#8627; This repository only works for Entities (Models) that inherits from EntityBase
+// &#8627; This repository is suitable for entities that have an integer Id
+// This repository implements the methods forced by the IRepository
+// &#8627; GetById
+// &#8627; Create
+// &#8627; Update
+// &#8627; Delete
 public class Repository<T> : IRepository<T> where T : EntityBase
 {
     private readonly ApplicationDbContext _dbContext;
