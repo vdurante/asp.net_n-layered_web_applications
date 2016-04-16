@@ -296,7 +296,6 @@ public class UserManager
         this._userRepository.Create(user);
     }
 }
-![](./res/img/figure3.png)
 {%endace%}
 
 **Usage**
