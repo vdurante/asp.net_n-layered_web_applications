@@ -66,7 +66,6 @@ The image bellow illustrates it quite well:
 
 Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager has a method (GetUser) that uses DatabaseManager to get an user from the database.
 
-
 #### The Bad Way
 
 {%ace edit=false, lang='csharp'%}
