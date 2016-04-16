@@ -10,5 +10,5 @@
        * [ASP.NET Boilerplate's Architecture](part1/software_architecture/aspnet_boilerplates_architecture.md)
        * [Extra Resources](part1/software_architecture/extra_resources.md)
    * [Design Patterns](part1/design_patterns/README.md)
-       * Extra Resources
+       * [Extra Resources](part1/design_patterns/extra_resources.md)
 
