@@ -71,26 +71,27 @@ Let's modify the UserManager implemented on the last chapter to use Dependency I
 {%ace edit=false, lang='csharp'%}
 public class UserManager
 {
-    private DatabaseManager _databaseManager;
-    
-    public UserManager() {
-        // instantiation of DatabaseManager class
-        // this is where the high dependency and tight coupling resides
-        
-        this._databaseManager = new DatabaseManager();
-    }
-    
-    public User GetUser(int id)
-    {
-        User user = this._databaseManager.GetUser(id);
+    private Repository<User> _userRepository;
 
-        // if user doesn't exist, throws an exception
-        if (user == null)
+    public UserManager()
+    {
+        // Instantiation of Repository class
+        // This is where the high dependency and tight coupling resides
+        this._userRepository = new Repository<User>();
+    }
+
+    public void CreateUser(string name, int age)
+    {
+        // some business logic
+        if (age < 18)
         {
-            throw new UserNotFoundException();
+            throw new UserTooYoungException();
         }
 
-        return user;
+        // User object (Model) is created using passed arguments
+        User user = new User { Name = name, Age = age };
+
+        this._userRepository.Create(user);
     }
 }
 {%endace%}
