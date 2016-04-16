@@ -70,19 +70,19 @@ Let's suppose a class responsible for managing users. This class, called UserMan
 {%ace edit=false, lang='csharp'%}
 public class UserManager
 {
-    private DatabaseManager databaseManager;
+    private DatabaseManager _databaseManager;
     
     public UserManager() {
         // instantiation of DatabaseManager class
         
-        databaseManager = new DatabaseManager();
+        this._databaseManager = new DatabaseManager();
     }
     
     public void CreateUser(string name, int age)
     {
         var user = new User { Name = name, Age = age };
         
-        databaseManager.InsertUser(user);
+        this._databaseManager.InsertUser(user);
     }
 }
 {%endace%}
@@ -100,7 +100,7 @@ If it becomes necessary to change DatabaseManager class to MockDatabaseManager, 
 #### The Good Practice
 
 {%ace edit=false, lang='csharp'%}
-public class IDatabaseManager
+public interface IDatabaseManager
 {
     
 }
@@ -109,19 +109,19 @@ public class IDatabaseManager
 {%ace edit=false, lang='csharp'%}
 public class UserManager
 {
-    private IDatabaseManager databaseManager;
+    private IDatabaseManager _databaseManager;
     
-    public UserManager() {
-        // instantiation of DatabaseManager class
+    public UserManager(IDatabaseManager databaseManager) {
+        // DatabaseManager is passed as an attribute into the constructor of UserManager
         
-        this.databaseManager = new DatabaseManager();
+        this._databaseManager = databaseManager;
     }
     
     public void CreateUser(string name, int age)
     {
         var user = new User { Name = name, Age = age };
         
-        this.databaseManager.Users.Insert(user);
+        this._databaseManager.Users.Insert(user);
     }
 }
 {%endace%}
