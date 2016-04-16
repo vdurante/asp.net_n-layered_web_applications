@@ -101,14 +101,41 @@ var userManager = new UserManager();
 User user = userManager.GetUser(1);
 {%endace%}
 
-Changing DatabaseManager class to MockDatabaseManager would be necessary to modify the code inside UserManager.
+Changing DatabaseManager class to MockDatabaseManager would be necessary to modify the code inside UserManager's class.
 
 #### The Good Practice
 
 {%ace edit=false, lang='csharp'%}
 public interface IDatabaseManager
-  {
-    
+{
+    User GetUser(int id);
+}
+
+public class DatabaseManager : IDatabaseManager
+{
+    public DatabaseManager()
+    {
+        // connects to database
+    }
+
+    public User GetUser(int id)
+    {
+        // runs SQL to get user from database
+    }
+}
+
+public class MockDatabaseManager : IDatabaseManager
+{
+    public MockDatabaseManager()
+    {
+        // create mock database data
+    }
+
+
+    public User GetUser(int id)
+    {
+        // get mock user from mock database
+    }
 }
 {%endace%}
 
@@ -116,18 +143,26 @@ public interface IDatabaseManager
 public class UserManager
 {
     private IDatabaseManager _databaseManager;
-    
-    public UserManager(IDatabaseManager databaseManager) {
+
+    public UserManager(IDatabaseManager databaseManager)
+    {
         // DatabaseManager is passed as an attribute into the constructor of UserManager
-        
+
         this._databaseManager = databaseManager;
     }
-    
-    public void CreateUser(string name, int age)
+
+    public User GetUser(int id)
     {
-        var user = new User { Name = name, Age = age };
-        
-        this._databaseManager.InsertUser(user);
+
+        User user = this._databaseManager.GetUser(id);
+
+        // if user doesn't exists, throws an exception
+        if (user == null)
+        {
+            throw new UserNotFoundException();
+        }
+
+        return user;
     }
 }
 {%endace%}
@@ -135,7 +170,19 @@ public class UserManager
 Using UserManager:
 
 {%ace edit=false, lang='csharp'%}
-var userManager = new UserManager();
+// using real database
 
-userManager.CreateUser("Jonathan", 22);
+DatabaseManager databaseManager = new DatabaseManager();
+
+UserManager userManager = new UserManager(databaseManager);
+
+User user = userManager.GetUser(1);
+
+// using mock database
+
+MockDatabaseManager mockDatabaseManager = new DatabaseManager();
+
+UserManager userManager = new UserManager(mockDatabaseManager);
+
+User user = userManager.GetUser(1);
 {%endace%}
