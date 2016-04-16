@@ -41,10 +41,12 @@ If the Business Logic requires this user to be deleted:
 
 * **Separation of Concerns.** Business logic separated from data access logic.
 * **Least Knowledge Principle.** Business logic is unaware regarding how data is accessed.
+* **Single Responsibility Principle.** Business logic is not responsible for data access.
 * **Operations on data are centralized.** Repositories centralize all CRUD operations, guaranteeing maintainability, readability and consistency.
 * **Increased testability.** Isolation promotes better unit testing.
 * **Caching strategy.** Data can be easily cached and managed.
-* ****
+* **Business Entities are strongly typed.** Manipulating data from database is made through strongly-typed objects and repository methods. Errors are identified during compiling time, unlike using pure SQL that would result in errors at run time, during execution of the query.
+* **Complex behavior.** Complex relationships and calculated fields can be enforced inside a repository, such as Polymorphism, that is not supported by databases, but can easily be implemented in a Repository, being transparent to the business logic.
 
 
 
