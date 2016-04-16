@@ -11,4 +11,5 @@
        * [Extra Resources](part1/software_architecture/extra_resources.md)
    * [Design Patterns](part1/design_patterns/README.md)
        * [Extra Resources](part1/design_patterns/extra_resources.md)
+       * What Is A Design Pattern?
 
