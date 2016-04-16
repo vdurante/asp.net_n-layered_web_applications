@@ -187,6 +187,5 @@ Repository<User> userRepository = new Repository<User>(dbContext);
 UserManager userManager = new UserManager(userRepository);
 
 userManager.CreateUser("Jonathan", 22);
-
 {%endace%}
 
