@@ -32,6 +32,8 @@ The creational design patterns are all about class instantiation, being divided 
 
 ### Structural Design Patterns
 
+The structural design patterns are all about class and object composition, using inheritance to compose interfaces.
+
 * **Adapter.** 
 * **Bridge.**
 * **Composite.**
@@ -41,6 +43,8 @@ The creational design patterns are all about class instantiation, being divided 
 * **Proxy.**
 
 ### Behavioral Design Patterns
+
+The behavioral design patterns are all about classes' objects communication. It is concerned with communication between objects.
 
 * **Chain of Responsibility.**
 * **Command.**
@@ -53,5 +57,7 @@ The creational design patterns are all about class instantiation, being divided 
 * **Strategy.**
 * **Template Method.**
 * **Visitor.**
+
+
 
 
