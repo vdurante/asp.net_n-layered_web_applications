@@ -6,11 +6,16 @@ To understand the explanation above, it is important to address what is procedur
 
 In procedural programming, a chunk of code that uses, or consumes, another chunk of code is in control of the process. This chunk of code knows exactly what piece of code, what method in what class, it uses.
 
+![](./res/img/figure1.png)
+
+The image above illustrates the procedural programming well. Class A, the consumer, needs the consumed classes (Services Y and Z), to run. Therefore, Class A instantiates both Y and Z classes before using those services.
+
+The approach presented above induces a tight coupling and high dependecy of Class A in relation to Classes Y and Z.
+
+The inversion of control proposes 
 ## Problem
 
 The image bellow demonstrates the typical 
-
-![](./res/img/figure1.png)
 
 ## Solution
 
