@@ -53,6 +53,27 @@ There is also a more generic approach, using a Type of the database table. A exa
 * **Complex behavior.** Complex relationships and calculated fields can be enforced inside a repository, such as Polymorphism, that is not supported by databases, but can easily be implemented in a Repository, being transparent to the business logic.
 
 
+## IRepository Interface
+
+list of suggested IRepository methods:
+
+### Querying
+
+**Getting a single entity**
+```csharp
+TEntity Get(TPrimaryKey id);
+Task<TEntity> GetAsync(TPrimaryKey id);
+TEntity Single(Expression<Func<TEntity, bool>> predicate);
+Task<TEntity> SingleAsync(Expression<Func<TEntity, bool>> predicate);
+TEntity FirstOrDefault(TPrimaryKey id);
+Task<TEntity> FirstOrDefaultAsync(TPrimaryKey id);
+TEntity FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
+Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
+TEntity Load(TPrimaryKey id);
+```
+
+
+
 ## Examples
 
 
