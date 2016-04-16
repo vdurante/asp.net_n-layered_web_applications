@@ -102,20 +102,7 @@ If it becomes necessary to change DatabaseManager class to MockDatabaseManager, 
 {%ace edit=false, lang='csharp'%}
 public class IDatabaseManager
 {
-    private IDatabaseManager databaseManager;
     
-    public UserManager() {
-        // instantiation of DatabaseManager class
-        
-        this.databaseManager = new DatabaseManager();
-    }
-    
-    public void CreateUser(string name, int age)
-    {
-        var user = new User { Name = name, Age = age };
-        
-        this.databaseManager.InsertUser(user);
-    }
 }
 {%endace%}
 
