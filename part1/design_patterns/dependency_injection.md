@@ -109,99 +109,47 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 }
 {%endace%}
 
-Using UserManager:
+If, for instance, it is intended to use a mock database for testing purposes, a change in the code of Repository class would be required.
 
-{%ace edit=false, lang='csharp'%}
-var userManager = new UserManager();
+Also, if a new Repository for tables that has Id as a long Type is implemented and the User table schema is changed to use a long as Id, the code inside UserManager also has to be changed to use LongRepository.
 
-User user = userManager.GetUser(1);
-{%endace%}
-
-Changing DatabaseManager class to MockDatabaseManager would be necessary to modify the code inside UserManager's class.
-
-#### The Good Way
-
-{%ace edit=false, lang='csharp'%}
-public interface IDatabaseManager
-{
-    User GetUser(int id);
-}
-
-// implements interface IDatabaseManager
-public class DatabaseManager : IDatabaseManager
-{
-    public DatabaseManager()
-    {
-        // connects to database
-    }
-
-    public User GetUser(int id)
-    {
-        // runs SQL to get user from database
-    }
-}
-
-// implements interface IDatabaseManager
-public class MockDatabaseManager : IDatabaseManager
-{
-    public MockDatabaseManager()
-    {
-        // create mock database data
-    }
-
-
-    public User GetUser(int id)
-    {
-        // get mock user from mock database
-    }
-}
-{%endace%}
-
-{%ace edit=false, lang='csharp'%}
+#### The Great Way
 public class UserManager
 {
-    private IDatabaseManager _databaseManager;
+    private IRepository<User> _userRepository;
 
-    public UserManager(IDatabaseManager databaseManager)
+    // Dependnecy is passed as an argument in the constructor
+    public UserManager(IRepository<User> userRepository)
     {
-        // DatabaseManager is passed as an attribute into the constructor of UserManager
-
-        this._databaseManager = databaseManager;
+        this._userRepository = userRepository;
     }
 
-    public User GetUser(int id)
+    public void CreateUser(string name, int age)
     {
-
-        User user = this._databaseManager.GetUser(id);
-
-        // if user doesn't exists, throws an exception
-        if (user == null)
+        // some business logic
+        if (age < 18)
         {
-            throw new UserNotFoundException();
+            throw new UserTooYoungException();
         }
 
-        return user;
+        // User object (Model) is created using passed arguments
+        User user = new User { Name = name, Age = age };
+
+        this._userRepository.Create(user);
     }
 }
-{%endace%}
 
-Using UserManager:
+public class Repository<T> : IRepository<T> where T : EntityBase
+{
+    private readonly ApplicationDbContext _dbContext;
 
-{%ace edit=false, lang='csharp'%}
-// using real database
+    public Repository()
+    {
+        // More dependency and tight coupling
+        this._dbContext = new ApplicationDbContext();
+    }
 
-DatabaseManager databaseManager = new DatabaseManager();
-
-UserManager userManager = new UserManager(databaseManager);
-
-User user = userManager.GetUser(1);
-
-// using mock database
-
-MockDatabaseManager mockDatabaseManager = new MockDatabaseManager();
-
-UserManager userManager = new UserManager(mockDatabaseManager);
-
-User user = userManager.GetUser(1);
+    // ...
+}
 {%endace%}
 
