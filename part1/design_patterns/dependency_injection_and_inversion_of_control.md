@@ -18,9 +18,9 @@ The approach presented above induces a tight coupling and high dependency of Cla
 * **Break of the Single Responsibility principle.** Class A assumes too many responsibilities.
 * **Break of the Principle of Least Knowledge.** Class A knows too much about Classes Y and Z.
 * **Lack of abstraction.** Class A uses concrete Classes Y and Z.
-* **Low testability.** 
+* **Low testability.** The high dependency between these classes decreases testability. It becomes hard to test Class A in isolation from Class Y or Z.
 
-This approach induces some unwanted consequences:
+This approach induces some unwanted constraints:
 
 * If it becomes necessary to replace or modify Class A's dependencies (Y and Z), a change in the source code of A is mandatory.
 * 
