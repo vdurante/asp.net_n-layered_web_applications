@@ -118,7 +118,7 @@ public class UserManager
 {
     private IRepository<User> _userRepository;
 
-    // Dependnecy is passed as an argument in the constructor
+    // Dependency is passed as an argument in the constructor
     public UserManager(IRepository<User> userRepository)
     {
         this._userRepository = userRepository;
@@ -142,11 +142,12 @@ public class UserManager
 public class Repository<T> : IRepository<T> where T : EntityBase
 {
     private readonly ApplicationDbContext _dbContext;
-
-    public Repository()
+    
+    // Dependency is passed as an argument in the constructor
+    public Repository(ApplicationDbContext dbContext)
     {
         // More dependency and tight coupling
-        this._dbContext = new ApplicationDbContext();
+        this._dbContext = new dbContext;
     }
 
     // ...
