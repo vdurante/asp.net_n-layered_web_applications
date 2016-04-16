@@ -121,7 +121,7 @@ public class UserManager
     {
         var user = new User { Name = name, Age = age };
         
-        this._databaseManager.Users.Insert(user);
+        this._databaseManager.InsertUser(user);
     }
 }
 {%endace%}
