@@ -95,9 +95,8 @@ public class UserManager
 {%endace%}
 
 **Usage**
-{%ace edit=false, lang='csharp'%}
-// usage
 
+{%ace edit=false, lang='csharp'%}
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
@@ -185,9 +184,11 @@ public class UserManager
     }
 }
 
+{%endace%}
 
-// usage
+**Usage**
 
+{%ace edit=false, lang='csharp'%}
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
@@ -299,10 +300,12 @@ public class UserManager
 {%endace%}
 
 **Usage**
+
 {%ace edit=false, lang='csharp'%}
 UserManager userManager = new UserManager();
 
 userManager.CreateUser("Jonathan", 22);
 {%endace%}
+
 
 Although the solution above is already a great advance, there are a few extra problems that will be addressed and solved on the next section: Dependecy Injection
