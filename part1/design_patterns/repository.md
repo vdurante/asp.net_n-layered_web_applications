@@ -191,7 +191,7 @@ userManager.CreateUser("Jonathan", 22);
 The great solution would include the following approches:
 
 * **Create a generic Repository.** A generic Repository would avoid repeating code for each Repository for every table present in the database.
-* **Use a Object-Relational Mapper (ORM).** An ORM would automatically map the Models into queries.
+* **Use an Object-Relational Mapper (ORM).** An ORM would automatically map the Models into queries.
 
 {%ace edit=false, lang='csharp'%}
 // Entity Base is a base class for the Entities of Entity Framework
