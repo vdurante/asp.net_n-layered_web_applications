@@ -161,8 +161,10 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 // Real database with integer Id
 
 ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
-Repository<User> userRepository = new Repository<User>(
-UserManager userManager = new UserManager();
+
+Repository<User> userRepository = new Repository<User>(dbContext);
+
+UserManager userManager = new UserManager(userRepository);
 
 userManager.CreateUser("Jonathan", 22);
 
