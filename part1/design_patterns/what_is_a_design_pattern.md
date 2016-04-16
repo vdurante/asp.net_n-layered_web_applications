@@ -58,6 +58,10 @@ The behavioral design patterns are all about classes' objects communication. It 
 * **Template Method.**
 * **Visitor.**
 
+Although it is extremely advised to learn, understand and apply these patterns, not all of them are entirely necessary to work on a N-Layer Architecture.
+
+## The Design Patterns that matter.
+
 
 
 
