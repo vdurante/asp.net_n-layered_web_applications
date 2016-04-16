@@ -158,6 +158,9 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 **Usage**
 
 {%ace edit=false, lang='csharp'%}
-// Real database
+// Real database with integer Id
+
+
+
 {%endace%}
 
