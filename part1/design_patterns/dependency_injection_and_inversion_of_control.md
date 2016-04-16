@@ -14,8 +14,9 @@ The approach presented above induces a tight coupling and high dependency of Cla
  
 ## Problems
 
-* **Thigh Coupling. ** The group of classes are highly dependent on one another. Class A assumes too many responsibilities.
-* **Lack of Single-Responsibility.** 
+* **Thigh Coupling. ** When a group of classes is highly dependent on one another.
+* **Break of Single Responsibility principle.** Class A assumes too many responsibilities.
+* **Lack of abstraction.** Class A uses concrete Classes Y and Z.
 
 
 ## Solution
