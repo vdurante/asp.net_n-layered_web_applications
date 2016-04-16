@@ -66,7 +66,7 @@ Let's suppose a class responsible for managing users. This class, called UserMan
 
 
 #### Bad
-{%ace edit=false, lang='csharp', theme='monokai'%}
+{%ace edit=false, lang='csharp'%}
 public class UserManager
 {
     private DatabaseManager databaseManager;
