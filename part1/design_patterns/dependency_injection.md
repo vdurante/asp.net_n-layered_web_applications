@@ -147,7 +147,7 @@ public class Repository<T> : IRepository<T> where T : EntityBase
     public Repository(ApplicationDbContext dbContext)
     {
         // More dependency and tight coupling
-        this._dbContext = new dbContext;
+        this._dbContext = new dbContext();
     }
 
     // ...
