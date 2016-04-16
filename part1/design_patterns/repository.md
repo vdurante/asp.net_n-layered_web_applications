@@ -58,6 +58,13 @@ There is also a more generic approach, using a Type of the database table. A exa
 
 ### Example 1: A Repository Interface
 
+
+
+#### The Bad Way
 {%ace edit=false, lang='csharp'%}
 
 {%endace%}
+
+#### The Good Way
+
+#### The Great Way
