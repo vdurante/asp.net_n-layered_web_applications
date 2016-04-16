@@ -84,7 +84,11 @@ public class UserManager
         
         // business logic mixed with data access logic
         
-        var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", name, age);
+        var query = String.Format(
+            "INSERT INTO Users (Name, Age) VALUES ({0}, {1});",
+            name,
+            age);
+            
         this._dbContext.SqlQuery(query);
     }
 }
