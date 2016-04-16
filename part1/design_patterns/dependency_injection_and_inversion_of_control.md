@@ -10,12 +10,11 @@ In procedural programming, a chunk of code that uses, or consumes, another chunk
 
 The image above illustrates the procedural programming well. Class A, the consumer, needs the consumed classes (Services Y and Z), to run. Therefore, Class A instantiates both Y and Z classes before using those services.
 
-The approach presented above induces a tight coupling and high dependecy of Class A in relation to Classes Y and Z.
-
-The inversion of control proposes 
+The approach presented above induces a tight coupling and high dependency of Class A in relation to Classes Y and Z.
+ 
 ## Problem
 
-The image bellow demonstrates the typical 
+
 
 ## Solution
 
