@@ -109,11 +109,13 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 }
 {%endace%}
 
-If, for instance, it is intended to use a mock database for testing purposes, a change in the code of Repository class would be required.
+If, for instance, it is intended to use a mock database for testing purposes, a change in the code of Repository class would be required, since it instantiates the ApplicationDbContext inside its constructor.
 
 Also, if a new Repository for tables that has Id as a long Type is implemented and the User table schema is changed to use a long as Id, the code inside UserManager also has to be changed to use LongRepository.
 
 #### The Great Way
+
+{%ace edit=false, lang='csharp'%}
 public class UserManager
 {
     private IRepository<User> _userRepository;
@@ -151,5 +153,11 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 
     // ...
 }
+{%endace%}
+
+**Usage**
+
+{%ace edit=false, lang='csharp'%}
+// Real database
 {%endace%}
 
