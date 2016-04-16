@@ -14,7 +14,7 @@ The approach presented above induces a tight coupling and high dependency of Cla
  
 ## Problem
 
-* **Thigh Coupling. ** 
+* **Thigh Coupling. ** The group of classes are highly dependent on one another.
 
 
 ## Solution
