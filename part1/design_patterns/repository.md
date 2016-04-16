@@ -63,6 +63,7 @@ Suppose a User Manager which contains core business logic regarding user managem
 #### The Bad Way
 
 The bad way would run SQL straight from the User Manager Class.
+
 {%ace edit=false, lang='csharp'%}
 public class UserManager
 {
@@ -75,8 +76,15 @@ public class UserManager
 
     public void CreateUser(string name, int age)
     {
+        // some business logic
+        if (age < 18)
+        {
+            throw new UserTooYoungException();
+        }
+        
+        // business logic mixed with data access logic
+        
         var query = String.Format("INSERT INTO Users (Name, Age) VALUES ({0}, {1});", name, age);
-
         this._dbContext.SqlQuery(query);
     }
 }
@@ -92,5 +100,8 @@ userManager.CreateUser("Jonathan", 22);
 {%endace%}
 
 #### The Good Way
+
+{%ace edit=false, lang='csharp'%}
+{%endace%}
 
 #### The Great Way
