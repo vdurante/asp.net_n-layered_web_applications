@@ -62,7 +62,7 @@ The image bellow illustrates it quite well:
 
 ### Example 1: Mock Database
 
-Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager has a method (CreateUser) that uses DatabaseManager to create an user.
+Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager has a method (GetUser) that uses DatabaseManager to get an user from the database.
 
 
 #### The Bad Practice
@@ -101,7 +101,7 @@ If it becomes necessary to change DatabaseManager class to MockDatabaseManager, 
 
 {%ace edit=false, lang='csharp'%}
 public interface IDatabaseManager
-{
+  {
     
 }
 {%endace%}
