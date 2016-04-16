@@ -101,7 +101,7 @@ var userManager = new UserManager();
 User user = userManager.GetUser(1);
 {%endace%}
 
-If it becomes necessary to change DatabaseManager class to MockDatabaseManager, for example, would be necessary to modify the code of UserManager.
+Changing DatabaseManager class to MockDatabaseManager would be necessary to modify the code inside UserManager.
 
 #### The Good Practice
 
