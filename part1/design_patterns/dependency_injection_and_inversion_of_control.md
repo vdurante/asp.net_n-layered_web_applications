@@ -12,9 +12,10 @@ The image above illustrates the procedural programming well. Class A, the consum
 
 The approach presented above induces a tight coupling and high dependency of Class A in relation to Classes Y and Z.
  
-## Problem
+## Problems
 
-* **Thigh Coupling. ** The group of classes are highly dependent on one another.
+* **Thigh Coupling. ** The group of classes are highly dependent on one another. Class A assumes too many responsibilities.
+* **Lack of Single-Responsibility.** 
 
 
 ## Solution
