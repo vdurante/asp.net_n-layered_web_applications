@@ -52,6 +52,3 @@ When building an architecture, some choices regarding the design of the architec
 * **Reuse.** Being capable of reusing a component or module in other applications.
 
 These principles are about being consistent, separating concerns, decreasing costs, establishing code styles aiming uniformity and being abstract.
-
-
-## Objectives
