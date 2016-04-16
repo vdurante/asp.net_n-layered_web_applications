@@ -46,3 +46,4 @@ On the example above, the database class dependency would be passed inside Class
 
 
 ## Consequence
+
