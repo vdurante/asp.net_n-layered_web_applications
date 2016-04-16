@@ -160,7 +160,11 @@ public class Repository<T> : IRepository<T> where T : EntityBase
 {%ace edit=false, lang='csharp'%}
 // Real database with integer Id
 
+ApplicationDbContext dbContext = new ApplicationDbContext(mock: false);
+Repository<User> userRepository = new Repository<User>(
+UserManager userManager = new UserManager();
 
+userManager.CreateUser("Jonathan", 22);
 
 {%endace%}
 
