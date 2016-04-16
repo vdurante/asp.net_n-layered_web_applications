@@ -72,6 +72,8 @@ public class UserManager
     private DatabaseManager databaseManager;
     
     public UserManager() {
+        // instantiation of DatabaseManager class
+        
         databaseManager = new DatabaseManager();
     }
     
@@ -82,6 +84,14 @@ public class UserManager
         databaseManager.Users.Insert(user);
     }
 }
+{%endace%}
+
+Using UserManager:
+
+{%ace edit=false, lang='csharp'%}
+var userManager = new UserManager();
+
+userManager.CreateUser("John", 22);
 {%endace%}
 
 If it becomes necessary to change 
