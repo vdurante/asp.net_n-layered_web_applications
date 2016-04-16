@@ -14,7 +14,7 @@ The approach presented above induces a tight coupling and high dependency of Cla
  
 ## Problems
 
-* **Thigh Coupling. ** When a group of classes is highly dependent on one another.
+* **Thight Coupling. ** When a group of classes is highly dependent on one another.
 * **Break of the Single Responsibility principle.** Class A assumes too many responsibilities.
 * **Break of the Principle of Least Knowledge.** Class A knows too much about Classes Y and Z.
 * **Lack of abstraction.** Class A uses concrete Classes Y and Z.
