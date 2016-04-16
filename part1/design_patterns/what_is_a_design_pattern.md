@@ -48,7 +48,7 @@ The creational design patterns are all about class instantiation, being divided 
 * **Iterator.** Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 * **Mediator.** Defines an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
 * **Memento.** Without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later. 
-* **Observer.** Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+* **Observer.** Defines an one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 * **State.** Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 * **Strategy.** Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 * **Template Method.** Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
