@@ -65,7 +65,7 @@ The image bellow illustrates it quite well:
 Let's suppose a class responsible for managing users. This class, called UserManager has a dependency on another class: DatabaseManager. UserManager has a method (GetUser) that uses DatabaseManager to get an user from the database.
 
 
-#### The Bad Practice
+#### The Bad Way
 
 {%ace edit=false, lang='csharp'%}
 public class UserManager
@@ -103,7 +103,7 @@ User user = userManager.GetUser(1);
 
 Changing DatabaseManager class to MockDatabaseManager would be necessary to modify the code inside UserManager's class.
 
-#### The Good Practice
+#### The Good Way
 
 {%ace edit=false, lang='csharp'%}
 public interface IDatabaseManager
