@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [What Is A Web Developer?](what_is_a_web_developer.md)
-* [The N-Layer ASP.NET Boilerplate](the_n-layered_aspnet_boilerplate.md)
+* [The N-Layered ASP.NET Boilerplate](the_n-layered_aspnet_boilerplate.md)
 * [Part I. Building The Theoretical Foundation](part1/README.md)
    * [Software Engineering](part1/software_engineering/README.md)
        * [Extra Resources](part1/software_engineering/extra_resources.md)
