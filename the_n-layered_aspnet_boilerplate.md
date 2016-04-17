@@ -1,2 +1,2 @@
-# The N-Layer ASP.NET Boilerplate
+# The N-Layered ASP.NET Boilerplate
 
