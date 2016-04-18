@@ -35,7 +35,7 @@ The following table shows the built-in C# types:
 | byte | Integral | 0 to 255 | | Unsigned 8-bit integer |
 | sbyte | Integral | -128 to 127 | | Signed 8-bit integer |
 | char | Unicode character | U+0000 to U+FFFF | | 16-bit numeric (ordinal) value |
-| decimal | Higher precision, smaller range decimal (great for financial and monetary calculations) | $$-7.9 * 10^{28}$$ to $$7.9 * 10^{28}$$| 128-bit |
+| decimal | Higher precision, smaller range decimal (great for financial and monetary calculations) | $$-7.9 * 10^{28}\ \text{to}\ 7.9 * 10^{28}$$| 28-29 significant digits | 128-bit |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
