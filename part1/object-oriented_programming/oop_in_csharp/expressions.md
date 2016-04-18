@@ -119,6 +119,12 @@ var activeUsers = db.Users.Where(u => u.Active == true).ToList();
 
 ### Type Inference in Lambdas
 
+The compiler infers the type of the result.
+
 ```csharp
-customers.Where(c => c.City == "London");
+var customersFromLondon = customers.Where(c => c.City == "London");
 ```
+
+## Expression Trees
+
+Resource: https://msdn.microsoft.com/en-us/library/bb397951.aspx
