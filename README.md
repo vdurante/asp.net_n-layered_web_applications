@@ -17,11 +17,11 @@
    
 ## Why I Wrote This Book
 
-First of all, I must make it clear that I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important concepts available for free on the internet.
-
 When I start working with new programming languages, architectures, designs, frameworks and concepts in general, I usually feel lost and overwhelmed at first. It takes some time to master everything necessary to start feeling comfortable and secure that I am doing everything the right way. I felt the same when I started working with C#, ASP.NET MVC and ASP.NET Boilerplate.
 
-However, this time I decided to write a book on my free time regarding everything I learned during this past years. I didn't intend to write everything from zero, since I don't feel capable to do so.
+However, this time I decided to write a book on my free time to document everything I learned during these past years of studies and practices. I didn't intend to write everything from zero, since I don't feel capable of doing so. Instead, I decided to compile only the important segments in a simplistic book that would allow a complete beginner to program web applications the right way.
+
+Apart from the practical examples (Part II and onward), I must make it clear that I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important and spread concepts that I stumbled upon during my research and studies. Everything is available for free on the internet. You can read more about these resources at "Extra Resources" sections 
 
 ## Part I. Building The Theoretical Foundation
 
