@@ -6,7 +6,7 @@ There is also a *var* type, which declares a implicit type. It is strongly-typed
 
 ## Nullable
 
-Some types are nullable as default. Some others need a special declaration, using the *?* operator.
+Some types are nullable by default. Some others need a special declaration, using the *?* operator.
 
 ## Built-In Types
 
