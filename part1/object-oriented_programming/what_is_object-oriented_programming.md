@@ -15,6 +15,13 @@ Opposed to classic procedural programming, which describes a program as a compos
 
 ## What are Software Design Principles?
 
+Software Design principles represent a set of guidelines to help a developer avoid having a bad design. There are 3 important characteristics of a bad design:
+
+* **Rigidity.** A code is hard to change because every change affects too many other parts of the system.
+* **Fragility.** When making a change, unexpected parts of the system break.
+* **Immobility.** The is hard to reuse in another application because it is heavily tangled (or couple) to the current application.
+
+
 
 ## The SOLID Design
 
