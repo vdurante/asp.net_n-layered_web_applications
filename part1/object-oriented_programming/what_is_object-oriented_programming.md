@@ -12,6 +12,10 @@ Opposed to classic procedural programming, which describes a program as a compos
 * **Inheritance.** The ability to create new classes based on existing ones, inheriting methods, attributes, strucutre.
 * **Polymorphism.** Multiple classes that implement the same properties and methods, but in different ways. Due to this fact, they can be used interchangeably.
 
+
+## What are Software Design Principles?
+
+
 ## The SOLID Design
 
 Robert C. Martin proposed the "first five principles" of object-oriented design. Then, Michael Feathers introduced the SOLID acronym to describe them:
