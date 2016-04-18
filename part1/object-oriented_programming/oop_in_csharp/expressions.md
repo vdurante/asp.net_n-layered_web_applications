@@ -127,4 +127,4 @@ var customersFromLondon = customers.Where(c => c.City == "London");
 
 ## Expression Trees
 
-Resource: https://msdn.microsoft.com/en-us/library/bb397951.aspx
+Read about expression trees [here](https://msdn.microsoft.com/en-us/library/bb397951.aspx).
