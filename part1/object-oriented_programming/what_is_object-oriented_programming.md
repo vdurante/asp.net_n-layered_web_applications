@@ -1,6 +1,6 @@
 # What Is Object-Oriented Programming (OOP)?
 
-Opposed to classic procedural programming, which describes a program as a composition of actions organized in a logical flow, Object-Oriented Programming (OOP) organizes code around classes and objects. An object is the instantiation of a class: self-contained components of an application that have private functionality as well as public functionality that can be exposed to the user.
+Opposed to classic procedural programming, which describes a program as a composition of actions organized in a logical flow, Object-Oriented Programming organizes code around classes and objects. An object is the instantiation of a class: self-contained components of an application that have private functionality as well as public functionality that can be exposed to the user.
 
 ## Important Concepts
 
