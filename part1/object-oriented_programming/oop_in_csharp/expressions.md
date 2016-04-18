@@ -27,3 +27,42 @@ static void Main()
     }
 }
 ```
+
+
+### Query Expression Overview
+
+* Can be used to query and to transform data from any LINQ-enabled data source, such as SQL databases.
+* Easy to master.
+* The variables in a query expression are strongly typed, although they can inferred by the compiler.
+* The query is not executed until iterated through a *foreach* loop
+* Queries are translated to Standard Query Operator method calls.
+* Query expressions are preferred over method calls, due to its readability.
+* Some query operations, such as Count or Max, have no equivalent query expression claus and must be expressed as a method call.
+* Query expressions can be compiled to expression trees or to delegates.
+
+## Lambda Expressions
+
+A lambda expression is an anonymous function used to create delegates or expression tree types. They are often used in Entity Framework.
+
+**Delegate.**
+```csharp
+delegate int del(int i);
+static void Main(string[] args)
+{
+    del myDelegate = x => x * x;
+    int j = myDelegate(5); //j = 25
+}
+```
+
+**Expression Tree.**
+```csharp
+static void Main(string[] args)
+{
+    Expression<del> myET = x => x * x;
+}
+```
+
+**Entity Framework.**
+```csharp
+var query = db.Users.Where(u => u.Age >= 18).ToList();
+```
