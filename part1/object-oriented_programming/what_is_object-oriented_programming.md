@@ -14,3 +14,8 @@ Opposed to classic procedural programming, which describes a program as a compos
 
 ## The SOLID Design
 
+Robert C. Martin proposed the "first five principles" of object-oriented design. Then, Michael Feathers introduced the SOLID acronym to describe them:
+
+* **Single Responsibility Principle.** A class should only have a single responsibility.
+* **Open/Closed Principle.** Classes, modules, functions, etc. should be open for extension, but closed for modification.
+* **Liskov Substitution Principle.** An extention of the Open/Close principle. 
