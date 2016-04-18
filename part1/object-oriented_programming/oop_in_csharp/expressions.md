@@ -79,10 +79,21 @@ Lambda expressions with an expression on the right side of the => operator.
 (int x, string s) => s.Length > x
 ```
 
-### Expression Lambdas
+### Statement Lambdas
 
-Lambda expressions with an expression on the right side of the => operator.
+Statement(s) is enclosed in braces
 
 ```
-(input parameters) => expression
+(input parameters) => {statement;}
 ```
+
+```csharp
+delegate void TestDelegate(string s);
+
+TestDelegate myDel = n => { string s = n + " " + "World"; Console.WriteLine(s); };
+myDel("Hello");
+```
+
+### Async Lambdas
+
+Lambda expressions and statements that incorporate asynchronous processing
