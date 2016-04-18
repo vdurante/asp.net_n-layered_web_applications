@@ -6,6 +6,10 @@ Arrays store multiple variables of the same type. They can be multidimensional.
 
 An array has the following properties:
 
+* Single-Dimensional, Multidimensional, or Jagged.
+* Number of dimensions and length are established when the array instance is created. These values can't be changed during the lifetime of the instance.
+* Default values of numeric array elements are set to zero. Reference elements (such as strings) are set to null.
+
 ## Example
 
 ```csharp
