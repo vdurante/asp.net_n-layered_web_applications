@@ -115,18 +115,15 @@ string quote = @"Her name was ""Sara.""";
 A format string is a string whose contents can be determined dynamically at runtime.
 
 ```csharp
-class FormatString
+static void Main()
 {
-    static void Main()
-    {
-        int i = 2;
-        int j = 4;
+    int i = 2;
+    int j = 4;
 
-        // A simple format string with no alignment formatting.
-        string s = System.String.Format("{0} times {1} = {2}", i, j, (i * j));
-        System.Console.WriteLine(s);
+    // A simple format string with no alignment formatting.
+    string s = System.String.Format("{0} times {1} = {2}", i, j, (i * j));
+    System.Console.WriteLine(s);
 
-    }
 }
 ```
 
@@ -162,7 +159,7 @@ A null string  does not refer to an instance of a System.String object. Any atte
 An empty string is an instance of System.String object that contains zero characters.
 
 ```csharp
-static void Main(string[] args)
+static void Main()
 {
     string str = "hello";
     string nullStr = null;
