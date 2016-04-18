@@ -66,3 +66,23 @@ static void Main(string[] args)
 ```csharp
 var adultUserList = db.Users.Where(u => u.Age >= 18).ToList();
 ```
+
+### Expression Lambdas
+
+Lambda expressions with an expression on the right side of the => operator.
+
+```
+(input parameters) => expression
+```
+
+```csharp
+(int x, string s) => s.Length > x
+```
+
+### Expression Lambdas
+
+Lambda expressions with an expression on the right side of the => operator.
+
+```
+(input parameters) => expression
+```
