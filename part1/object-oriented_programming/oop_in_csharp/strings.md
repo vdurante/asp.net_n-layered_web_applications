@@ -123,7 +123,7 @@ class FormatString
         int j = 4;
 
         // A simple format string with no alignment formatting.
-        s = System.String.Format("{0} times {1} = {2}", i, j, (i * j));
+        string s = System.String.Format("{0} times {1} = {2}", i, j, (i * j));
         System.Console.WriteLine(s);
 
     }
