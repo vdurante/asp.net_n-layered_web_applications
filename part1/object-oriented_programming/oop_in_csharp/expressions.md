@@ -64,5 +64,5 @@ static void Main(string[] args)
 
 **Entity Framework.**
 ```csharp
-var query = db.Users.Where(u => u.Age >= 18).ToList();
+var adultUserList = db.Users.Where(u => u.Age >= 18).ToList();
 ```
