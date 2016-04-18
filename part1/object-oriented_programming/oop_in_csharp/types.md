@@ -31,14 +31,14 @@ The following table shows the built-in C# types:
 
 | C# Type | Description | Range | Precision | Size
 | -- | -- | -- | -- | -- | -- |
-| bool | Boolean | (*true* or *false*) | | |
-| byte | Integral | 0 to 255 | | Unsigned 8-bit integer |
-| sbyte | Integral | -128 to 127 | | Signed 8-bit integer |
-| char | Unicode character | U+0000 to U+FFFF | | 16-bit numeric (ordinal) value |
+| bool | Boolean | (*true* or *false*) | - | |
+| byte | Integral | 0 to 255 | - | Unsigned 8-bit integer |
+| sbyte | Integral | -128 to 127 | - | Signed 8-bit integer |
+| char | Unicode character | U+0000 to U+FFFF | - | 16-bit numeric (ordinal) value |
 | decimal | High precision, small range floating-point (great for financial and monetary calculations) | $$-7.9 * 10^{28}\ \text{to}\ 7.9 * 10^{28}$$| 28-29 significant digits | 128-bit |
 | double | Simple floating-point | $$\pm5.0 * 10^{-324}\ \text{to}\ \pm1.7 * 10^{308}$$ | 15-16 digitis | 64-bit |
 | float | Simple floating-point | $$-3.4*10^{38}\ \text{to}\ +3.4*10^{38}$$ | 7 digits | 32-bit |
-| int | Integral |  |  | Signed 32-bit
+| int | Integral | -2,147,483,648 to 2,147,483,647 | - | Signed 32-bit
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
