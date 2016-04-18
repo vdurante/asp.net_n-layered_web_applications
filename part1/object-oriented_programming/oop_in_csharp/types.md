@@ -4,7 +4,7 @@ C# is a strongly-typed language. This means that every variable and constant has
   
 There is also a *var* type, which declares a implicit type. It is strongly-typed as well, but the compiler determines the type.
 
-## Nullable
+## Nullable Types
 
 Some types are nullable by default. Some others need a special declaration, using the *?* operator.
 
@@ -29,9 +29,21 @@ bool? MyNullableBool = null;
 
 The following table shows the built-in C# types:
 
-| C# Type | Description |
+| C# Type | Description | Range | Size
 | -- | -- |
-| bool | A boolean variable |
+| bool | Boolean (*true* or *false*) |
+| byte | integral type that stores from 0 to 255 range |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 
 
