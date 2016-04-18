@@ -9,16 +9,20 @@
  
   After that year, a new company had taken place and I had the opportunity to seek a new beginning. This time, I started working with [ASP.NET MVC](http://www.asp.net/mvc). As my applications grew in size, it became clear that the MVC architecture was not enough. It was great for a small company, but it started to fall short in some aspects as my company grew in size and complexity.
  
-   Seeking the state of the art - yet [robust](http://nob.cs.ucdavis.edu/bishop/secprog/robust.html) - web development practices, I met [ASP.NET Boilerplate](http://aspnetboilerplate.com/). After months struggling with its low learning curve, I decided to write this book.
+   Seeking the state of the art - yet [robust](http://nob.cs.ucdavis.edu/bishop/secprog/robust.html) - web development practices, I met [ASP.NET Boilerplate](http://aspnetboilerplate.com/). After months struggling with its low learning curve (from my perspective), I decided to write this book.
    
   The intention is to present and carefully explain the best practices of software architecture, design pattern, modern web development and more. The book displays theory and practices through the usage of the framework, all explained by examples. It also implements a few applications. Feel free to skip the theoretical part if you are already familiar.
    
    After this book, I expect you to have a solid foundation to build your own industrial-tier modern web applications.
    
-   Enjoy!
-   
-   Vitor Durante.
-   
+## Why I Wrote This Book
+
+First of all, I must make it clear that I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important concepts available for free on the internet.
+
+When I start working with new programming languages, architectures, designs, frameworks and concepts in general, I usually feel lost and overwhelmed at first. It takes some time to master everything necessary to start feeling comfortable and secure that I am doing everything the right way. I felt the same when I started working with C#, ASP.NET MVC and ASP.NET Boilerplate.
+
+However, this time I decided to write a book on my free time regarding everything I learned during this past years. I didn't intend to write everything from zero, since I don't feel capable to do so.
+
 ## Part I. Building The Theoretical Foundation
 
 Part one describes the theory behind robust programming, software architecture, software engineering, design patterns, general conventions, C# language, the ASP.NET MVC framework and the ASP.NET Boilerplate framework.
