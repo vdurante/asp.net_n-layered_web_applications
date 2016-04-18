@@ -29,7 +29,7 @@ bool? MyNullableBool = null;
 
 The following table shows the built-in C# types:
 
-| C# Type | Description | Range | Precision | Size
+| C# Type | Description | Range | Precision | Size |
 | -- | -- | -- | -- | -- | -- |
 | bool | Boolean | (*true* or *false*) | - | |
 | byte | Integral | 0 to 255 | - | Unsigned 8-bit integer |
@@ -39,11 +39,14 @@ The following table shows the built-in C# types:
 | double | Simple floating-point | $$\pm5.0 * 10^{-324}\ \text{to}\ \pm1.7 * 10^{308}$$ | 15-16 digitis | 64-bit |
 | float | Simple floating-point | $$-3.4*10^{38}\ \text{to}\ +3.4*10^{38}$$ | 7 digits | 32-bit |
 | int | Integral | -2,147,483,648 to 2,147,483,647 | - | Signed 32-bit
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| uint | Integral | 0 to 4,294,967,295 | - | Unsigned 32-bit |
+| long | Integral | –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | - | Signed 64-bit |
+| ulong | Integral | 0 to 18,446,744,073,709,551,615 | - | Unsigned 64-bit |
+| object | Alias for Object. Can be assigned any type, since all types inherit from Object | - | - | - |
+| short | Integral | -32,768 to 32,767 | - | Signed 16-bit |
+| ushort | Integral | 0 to 65,535 | - | Unsigned 16-bit |
+| string | Sequence of zero or more *char* | - | - | $$N*\text{16-bit}$$ |
+
 
 
 
