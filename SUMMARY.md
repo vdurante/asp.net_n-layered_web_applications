@@ -16,7 +16,7 @@
        * [OOP in C#](part1/object-oriented_programming/oop_in_csharp/README.md)
            * [Classes and Objects](part1/object-oriented_programming/oop_in_csharp/classes_and_objects.md)
            * [Types](part1/object-oriented_programming/oop_in_csharp/types.md)
-           * Arrays
+           * [Arrays](part1/object-oriented_programming/oop_in_csharp/arrays.md)
        * [The SOLID Design](part1/object-oriented_programming/the_solid_design/README.md)
            * [Single Responsibility Principle](part1/object-oriented_programming/the_solid_design/single_responsibility_principle.md)
        * [Extra Resources](part1/object-oriented_programming/extra_resources.md)
