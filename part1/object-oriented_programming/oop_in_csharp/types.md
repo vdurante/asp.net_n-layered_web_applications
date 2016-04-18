@@ -10,6 +10,8 @@ Some types are nullable by default. Some others need a special declaration, usin
 
 **String.**  Nullable by default.
 
+
+
 **Bool.** Not-nullable by default.
 ## Built-In Types
 
