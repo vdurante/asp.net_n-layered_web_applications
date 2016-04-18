@@ -11,3 +11,6 @@ Opposed to classic procedural programming, which describes a program as a compos
 * **Encapsulation.** A group of methods and attributes that are encapsulated, meaning that are treated as a single unit or object.
 * **Inheritance.** The ability to create new classes based on existing ones, inheriting methods, attributes, strucutre.
 * **Polymorphism.** Multiple classes that implement the same properties and methods, but in different ways. Due to this fact, they can be used interchangeably.
+
+## The SOLID Design
+
