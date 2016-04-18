@@ -91,8 +91,6 @@ My pensive SARA ! thy soft cheek reclined
 string quote = @"Her name was ""Sara.""";
 //Output: Her name was "Sara."
 ```
-
-
 ## String Escape Sequences
 
 | Escape Sequence | Character Name |
@@ -112,5 +110,22 @@ string quote = @"Her name was ""Sara.""";
 | \v | Vertical tab |
 | \x | Unicode escape sequence similar to "\u" except with variable length |
 
+## Format Strings
 
+A format string is a string whose contents can be determined dynamically at runtime.
 
+```csharp
+class FormatString
+{
+    static void Main()
+    {
+        int i = 2;
+        int j = 4;
+
+        // A simple format string with no alignment formatting.
+        s = System.String.Format("{0} times {1} = {2}", i, j, (i * j));
+        System.Console.WriteLine(s);
+
+    }
+}
+```
