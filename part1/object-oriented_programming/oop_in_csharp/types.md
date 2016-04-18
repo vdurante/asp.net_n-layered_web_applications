@@ -8,6 +8,9 @@ There is also a *var* type, which declares a implicit type. It is strongly-typed
 
 Some types are nullable by default. Some others need a special declaration, using the *?* operator.
 
+**String.**  Nullable by default.
+
+**Bool.** Not-nullable by default.
 ## Built-In Types
 
 The following table shows the built-in C# types:
