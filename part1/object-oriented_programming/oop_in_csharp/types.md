@@ -30,7 +30,7 @@ bool? MyNullableBool = null;
 The following table shows the built-in C# types:
 
 | C# Type | Description | Range | Size
-| -- | -- |
+| -- | -- | -- | -- | -- |
 | bool | Boolean (*true* or *false*) |
 | byte | integral type that stores from 0 to 255 range |
 |  |  |
