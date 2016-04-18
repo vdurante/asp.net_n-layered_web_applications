@@ -3,7 +3,7 @@
         "ace",
         "expandable-chapters",
         "image-captions",
-        "kathex"
+        "katex"
     ],
     "pluginsConfig": {}
 }
