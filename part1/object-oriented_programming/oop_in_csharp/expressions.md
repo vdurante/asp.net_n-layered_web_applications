@@ -103,3 +103,11 @@ Parallel.For(0, 10, async i => {
   await Task.Delay(1000);
 });
 ```
+
+### Lambdas with the Standard Query Operators
+
+Often used by Entity Framework.
+
+```csharp
+var activeUsers = db.Users.Where(u => u.Active == true).ToList();
+```
