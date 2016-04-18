@@ -96,4 +96,4 @@ myDel("Hello");
 
 ### Async Lambdas
 
-Lambda expressions and statements that incorporate asynchronous processing
+Lambda expressions and statements that incorporate asynchronous processing.
