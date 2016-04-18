@@ -210,6 +210,3 @@ static void Main()
     System.Console.WriteLine(sb);  // displays 9123456789
 }
 ```
-
-
-
