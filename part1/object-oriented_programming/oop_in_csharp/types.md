@@ -1,4 +1,4 @@
-# Types
+Types
 
 C# is a strongly-typed language. This means that every variable and constant has a type, as does every expression (i.e. method, or function) that evaluates to a type. Every method specifies a type for each input argument, as well as for the return value.
   
@@ -46,7 +46,3 @@ The following table shows the built-in C# types:
 | short | Integral | -32,768 to 32,767 | - | Signed 16-bit |
 | ushort | Integral | 0 to 65,535 | - | Unsigned 16-bit |
 | string | Sequence of zero or more *char* | - | - | $$N*\text{16-bit}$$ |
-
-
-
-
