@@ -7,6 +7,7 @@ Opposed to classic procedural programming, which describes a program as a compos
 * **Class.** A template or set of instructions (methods) and data (attributes) to build a specific object.
 * **Methods.** The capabilities (or functions) of a class.
 * **Attribute.** The properties of a class, such as variables.
-* **Encapsulation.** 
+* **Object.** An instance of a class. The concretization of the template of a class into a concrete object.
+* **Encapsulation.** A group of methods and attributes that are encapsulated, meaning that are treated as a single unit or obeject.
 * **Inheritance.** 
 * **Polymorphism.** 
