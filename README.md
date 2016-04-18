@@ -23,11 +23,21 @@ After bad experiences with my first company, I felt the necessity to seek best p
 
 However, I believe that knowledge must not be kept to ourselves. Knowledge must be shared. This time I decided to write a book on my free time to document everything I learned during these past years of studies and practices. I didn't intend to write everything from zero, since I don't feel capable of doing so. Instead, I decided to compile only the important segments in a simplistic book that would allow a complete beginner to develop web applications the right way.
 
-I must make it clear that apart from the practical examples (Part II and onward), I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important and spread concepts that I stumbled upon during my research and studies. Everything is available for free on the internet. I just took the liberty to compile and document everything I felt important in a book for posterior usage. I also included my own explanations when I felt the explanations provided by the authros of those resources seemed to extent or complex. You can read more about these resources at "Extra Resources" sections throughout Part I.
+I must make it clear that apart from the practical examples (Part II and onward), I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important and spread concepts that I stumbled upon during my research and studies. Everything is available for free on the internet. I just took the liberty to compile and document everything I felt important in a book for posterior usage. I also changed or included my own explanations when I felt the explanations provided by the authors of those resources seemed too extent or complex. You can read more about these resources at "Extra Resources" sections throughout Part I.
 
-The examples were entirely written by me using ASP.NET Boilerplate, sometimes inspired by famous books and resources of MVC development, but working with frameworks other than ASP.NET Boilerplate. These resources are also available for free on the internet and will be presented throughout the book, for the sake of comparison. 
+The examples, available on Parth II onward, were entirely written by me using ASP.NET Boilerplate, sometimes inspired by famous books and resources of MVC development working with frameworks other than ASP.NET Boilerplate. These resources are also available for free on the internet and will be presented throughout the book, for the sake of comparison.
 
 This book should be reliable, but don't take everything I write as the absolute truth. Acquiring knowledge is a never-ending process. I intend to update this book as long as I am learning new things.
+
+## How to use this book
+
+Part I may be overwhelming and boring. Don't attain yourself reading the book strictly from first to last page. The book should be used as a consulting resource. Whenever you see something you don't know anything about, or don't remember, take some time to read it and understand/remember it.
+
+Part II onward are examples of implementations of web applications. Feel free to read all of them, or reading the introduction and verifying which of them fits best your learning intentions.
+
+Extra resources are presented as bibliographic reference used to write this book. It is advised to read it, although not necessary. Don't forget this book was heavily inspired by these resources, but heavily summarized as well. Take a look at the resources and contact me whenever you don't understand anything I wrote.
+
+Also, feel free to contact me with questions, complaints or suggestions, either by leaving comments on paragraphs throughout the book, or e-mail, or any other contact ways.
 
 ## Part I. Building The Theoretical Foundation
 
