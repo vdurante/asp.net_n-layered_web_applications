@@ -13,6 +13,7 @@
        * [Extra Resources](part1/software_architecture/extra_resources.md)
    * [Object-Oriented Programming](part1/object-oriented_programming/README.md)
        * [What Is Object-Oriented Programming?](part1/object-oriented_programming/what_is_object-oriented_programming.md)
+       * [OOP in C#](part1/object-oriented_programming/oop_in_csharp/README.md)
        * [Extra Resources](part1/object-oriented_programming/extra_resources.md)
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
