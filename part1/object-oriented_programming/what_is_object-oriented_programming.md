@@ -21,8 +21,6 @@ Software Design principles represent a set of guidelines to help a developer avo
 * **Fragility.** When making a change, unexpected parts of the system break.
 * **Immobility.** The is hard to reuse in another application because it is heavily tangled (or couple) to the current application.
 
-
-
 ## The SOLID Design
 
 Robert C. Martin proposed the "first five principles" of object-oriented design. Then, Michael Feathers introduced the SOLID acronym to describe them:
