@@ -140,3 +140,50 @@ System.Console.WriteLine(s3.Substring(7, 2));
 // Output: "C#"
 ```
 
+
+## Accessing Individual Characters
+
+Strings can be accessed as arrays.
+
+```csharp
+string s5 = "Printing backwards";
+
+for (int i = 0; i < s5.Length; i++)
+{
+    System.Console.Write(s5[s5.Length - i - 1]);
+}
+// Output: "sdrawkcab gnitnirP"
+```
+
+## Null Strings and Empty Strings
+
+A null string  does not refer to an instance of a System.String object. Any attempt to call a method on a null string causes a *NullReferenceException*.
+
+An empty string is an instance of System.String object that contains zero characters.
+
+```csharp
+static void Main(string[] args)
+{
+    string str = "hello";
+    string nullStr = null;
+    string emptyStr = String.Empty;
+
+    if (!String.IsNullOrEmpty(str))
+    {
+
+        System.Console.WriteLine("str is not null nor empty");
+
+    }
+
+    if (nullStr == null)
+    {
+        System.Console.WriteLine("nullStr is null");
+    }
+
+    if (String.IsNullOrEmpty(emptyStr))
+    {
+        System.Console.WriteLine("emptyString is null or empty");
+    }
+
+}
+```
