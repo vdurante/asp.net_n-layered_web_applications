@@ -106,7 +106,7 @@ Parallel.For(0, 10, async i => {
 
 ### Lambdas with the Standard Query Operators
 
-Often used by Entity Framework.
+Often used when working with Entity Framework.
 
 ```csharp
 Func<int, bool> isEqualToFive = x => x == 5;
@@ -115,4 +115,10 @@ bool result = isEqualToFive(4); // false
 ```
 ```csharp
 var activeUsers = db.Users.Where(u => u.Active == true).ToList();
+```
+
+### Type Inference in Lambdas
+
+```csharp
+customers.Where(c => c.City == "London");
 ```
