@@ -2,6 +2,12 @@
 
 Arrays store multiple variables of the same type. They can be multidimensional.
 
+## Overview
+
+An array has the following properties:
+
+## Example
+
 ```csharp
 class TestArraysClass
 {
