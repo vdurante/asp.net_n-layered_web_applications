@@ -19,4 +19,7 @@ Robert C. Martin proposed the "first five principles" of object-oriented design.
 * **Single Responsibility Principle.** A class should only have a single responsibility.
 * **Open/Closed Principle.** Classes, modules, functions, etc. should be open for extension, but closed for modification.
 * **Liskov Substitution Principle.** If class D is derived from base class B, class D must be completely substitutable for the base class B. 
-* **Interface Segregation Principle.** No client should be forced to depend on interfaces that it does not use.
+* **Interface Segregation Principle.** No client should be forced to depend on interfaces that it does not use. In other words, segregating one big general-purpose interface in multiple specific ones is peferable.
+* **Dependency Inversion Principle.** One should depend upon abstractions and not upon concretions. High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+
+
