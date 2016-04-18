@@ -45,4 +45,4 @@ The following table shows the built-in C# types:
 | object | Alias for Object. Can be assigned any type, since all types inherit from Object | - | - | - |
 | short | Integral | -32,768 to 32,767 | - | Signed 16-bit |
 | ushort | Integral | 0 to 65,535 | - | Unsigned 16-bit |
-| string | Sequence of zero or more *char* | - | - | $$N*\text{16-bit}$$ |
+| string | Sequence of zero or more Unicode characters (*char*) | - | - | $$N*\text{16-bit}$$ |
