@@ -9,6 +9,9 @@ An array has the following properties:
 * Single-Dimensional, Multidimensional, or Jagged.
 * Number of dimensions and length are established when the array instance is created. These values can't be changed during the lifetime of the instance.
 * Default values of numeric array elements are set to zero. Reference elements (such as strings) are set to null.
+* **Jagged Array.** An array of arrays, and therefore its elements are reference types and are initialized to *null*.
+* **Zero indexed.** An array with *N* elements is indexed from *0* to *N-1*.
+* 
 
 ## Example
 
