@@ -21,7 +21,7 @@ When I start working with new programming languages, architectures, designs, fra
 
 After bad experiences with my first company, I felt the necessity to seek best practices on web development. From this experience on, I started investing several hours per week studying theories related to my fields of interest: Computer Engineering, Computer Science, and Web Development in C#.
 
-However, this time I decided to write a book on my free time to document everything I learned during these past years of studies and practices. I didn't intend to write everything from zero, since I don't feel capable of doing so. Instead, I decided to compile only the important segments in a simplistic book that would allow a complete beginner to program web applications the right way.
+However, I believe that knowledge must not be kept to ourselves. Knowledge must be shared. This time I decided to write a book on my free time to document everything I learned during these past years of studies and practices. I didn't intend to write everything from zero, since I don't feel capable of doing so. Instead, I decided to compile only the important segments in a simplistic book that would allow a complete beginner to develop web applications the right way.
 
 I must make it clear that apart from the practical examples (Part II and onward), I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important and spread concepts that I stumbled upon during my research and studies. Everything is available for free on the internet. You can read more about these resources at "Extra Resources" sections throughout Part I.
 
