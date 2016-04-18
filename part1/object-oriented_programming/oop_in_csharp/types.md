@@ -11,10 +11,20 @@ Some types are nullable by default. Some others need a special declaration, usin
 **String.**  Nullable by default.
 
 ```csharp
-
+// allowed
+string MyString = null;
 ```
 
 **Bool.** Not-nullable by default.
+
+```csharp
+// ERROR: non-nullable
+bool MyBool = null;
+
+// allowed
+bool? MyNullableBool = null;
+```
+
 ## Built-In Types
 
 The following table shows the built-in C# types:
