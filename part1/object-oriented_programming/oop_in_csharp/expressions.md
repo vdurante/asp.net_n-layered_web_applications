@@ -111,7 +111,7 @@ Often used by Entity Framework.
 ```csharp
 Func<int, bool> isEqualToFive = x => x == 5;
 
-bool result = isEqualToFive(4);
+bool result = isEqualToFive(4); // false
 ```
 ```csharp
 var activeUsers = db.Users.Where(u => u.Active == true).ToList();
