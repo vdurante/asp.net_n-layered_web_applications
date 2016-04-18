@@ -31,8 +31,8 @@ The following table shows the built-in C# types:
 
 | C# Type | Description | Range | Size
 | -- | -- | -- | -- | -- |
-| bool | Boolean (*true* or *false*) |
-| byte | integral type that stores from 0 to 255 range |
+| bool | Boolean | (*true* or *false*) | |
+| byte | Integral | 0 to 255 | Unsigned 8-bitt integer |
 |  |  |
 |  |  |
 |  |  |
