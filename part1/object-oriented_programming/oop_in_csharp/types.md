@@ -4,27 +4,6 @@ C# is a strongly-typed language. This means that every variable and constant has
   
 There is also a *var* type, which declares a implicit type. It is strongly-typed as well, but the compiler determines the type.
 
-## Nullable Types
-
-Some types are nullable by default. Some others need a special declaration, using the *?* operator.
-
-**String.**  Nullable by default.
-
-```csharp
-// allowed
-string MyString = null;
-```
-
-**Bool.** Not-nullable by default.
-
-```csharp
-// ERROR: non-nullable
-bool MyBool = null;
-
-// allowed
-bool? MyNullableBool = null;
-```
-
 ## Built-In Types
 
 The following table shows the built-in C# types:
@@ -46,3 +25,24 @@ The following table shows the built-in C# types:
 | short | Integral | -32,768 to 32,767 | - | Signed 16-bit |
 | ushort | Integral | 0 to 65,535 | - | Unsigned 16-bit |
 | string | Sequence of zero or more Unicode characters (*char*) | - | - | $$N*\text{16-bit}$$ |
+
+## Nullable Types
+
+Some types are nullable by default. Some others need a special declaration, using the *?* operator.
+
+**String.**  Nullable by default.
+
+```csharp
+// allowed
+string MyString = null;
+```
+
+**Bool.** Not-nullable by default.
+
+```csharp
+// ERROR: non-nullable
+bool MyBool = null;
+
+// allowed
+bool? MyNullableBool = null;
+```
