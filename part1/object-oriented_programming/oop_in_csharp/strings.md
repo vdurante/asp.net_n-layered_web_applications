@@ -22,11 +22,7 @@ string oldPath = "c:\\Program Files\\Microsoft Visual Studio 8.0";
 // Initialize with a verbatim string literal.
 string newPath = @"c:\Program Files\Microsoft Visual Studio 9.0";
 
-// Use System.String if you prefer.
-System.String greeting = "Hello World!";
-
-// In local variables (i.e. within a method body)
-// you can use implicit typing.
+// Implicit type
 var temp = "I'm still a strongly-typed System.String!";
 
 // Use a const string to prevent 'message4' from
