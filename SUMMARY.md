@@ -11,7 +11,7 @@
        * [N-Layer Architecture](part1/software_architecture/n-layer_architecture.md)
        * [ASP.NET Boilerplate's Architecture](part1/software_architecture/aspnet_boilerplates_architecture.md)
        * [Extra Resources](part1/software_architecture/extra_resources.md)
-   * [Object-Oriented Programming](part1/object-oriented_programming.md)
+   * [Object-Oriented Programming](part1/object-oriented_programming/README.md)
        * What Is Object-Oriented Programming?
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
