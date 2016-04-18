@@ -97,3 +97,9 @@ myDel("Hello");
 ### Async Lambdas
 
 Lambda expressions and statements that incorporate asynchronous processing.
+
+```csharp
+Parallel.For(0, 10, async i => {
+  await Task.Delay(1000);
+});
+```
