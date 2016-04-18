@@ -35,9 +35,9 @@ Part I may be overwhelming and boring. Don't attain yourself reading the book st
 
 Part II onward are examples of implementations of web applications. Feel free to read all of them, or reading the introduction and verifying which of them fits best your learning intentions.
 
-Extra resources are presented as bibliographic reference used to write this book. It is advised to read it, although not necessary. Don't forget this book was heavily inspired by these resources, but heavily summarized as well. Take a look at the resources and contact me whenever you don't understand anything I wrote.
+Extra resources are presented as bibliographic reference used to write this book. It is advised to read it, although not necessary. Don't forget this book was heavily inspired by these resources, but heavily summarized as well. Take a look at the resources and contact me whenever you don't understand something I wrote.
 
-Also, feel free to contact me with questions, complaints or suggestions, either by leaving comments on paragraphs throughout the book, or e-mail, or any other contact ways.
+Feel free to contact me with questions, complaints or suggestions, either by leaving comments on paragraphs throughout the book, or e-mail, or any other way.
 
 ## Part I. Building The Theoretical Foundation
 
