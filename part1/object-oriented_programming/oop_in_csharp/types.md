@@ -36,8 +36,8 @@ The following table shows the built-in C# types:
 | sbyte | Integral | -128 to 127 | | Signed 8-bit integer |
 | char | Unicode character | U+0000 to U+FFFF | | 16-bit numeric (ordinal) value |
 | decimal | Higher precision, smaller range floating-point (great for financial and monetary calculations) | $$-7.9 * 10^{28}\ \text{to}\ 7.9 * 10^{28}$$| 28-29 significant digits | 128-bit |
-| double | simple floating-point | $$\pm5.0 * 10^{-324}\ \text{to}\ \pm1.7 * 10^{308}$$ |  |
-|  |  |  |  |
+| double | simple floating-point | $$\pm5.0 * 10^{-324}\ \text{to}\ \pm1.7 * 10^{308}$$ | 15-16 digitis | 64-bit |
+| float | simple floating-point | $$-3.4*10^{38}\ \text{to}\ +3.4*10^{38}$$ | 7 digits | 32-bit
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
