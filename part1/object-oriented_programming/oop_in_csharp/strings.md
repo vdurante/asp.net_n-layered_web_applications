@@ -52,7 +52,9 @@ System.Console.WriteLine(s1);
 // Output: A string is more than the sum of its chars.
 ```
 
-## Regular and Verbatim String Literals
+## Regular String Literals
+
+Regular string literals are used to embed escape characters.
 
 ```csharp
 string columns = "Column 1\tColumn 2\tColumn 3";
@@ -68,3 +70,45 @@ string rows = "Row 1\r\nRow 2\r\nRow 3";
 string title = "\"The \u00C6olean Harp\", by Samuel Taylor Coleridge";
 //Output: "The Æolean Harp", by Samuel Taylor Coleridge
 ```
+
+## Verbatim String Literals
+
+Are used for convenience and better readability.
+
+```csharp
+string filePath = @"C:\Users\scoleridge\Documents\";
+//Output: C:\Users\scoleridge\Documents\
+
+string text = @"My pensive SARA ! thy soft cheek reclined
+    Thus on mine arm, most soothing sweet it is
+    To sit beside our Cot,...";
+/* Output:
+My pensive SARA ! thy soft cheek reclined
+   Thus on mine arm, most soothing sweet it is
+   To sit beside our Cot,... 
+*/
+
+string quote = @"Her name was ""Sara.""";
+//Output: Her name was "Sara."
+```
+
+
+## String Escape Sequences
+
+| Escape Sequence | Character Name |
+| - | - |
+| \' | Single quote |
+| \" | Double quote |
+| \\ | Backslash |
+| \0 | Null |
+| \a | Alert |
+| \b | Backspace |
+| \f | Form feed |
+| \n | New line |
+| \r | Carriage return |
+| \t | Horizontal tab |
+| \U | Unicode escape sequence for surrogate pairs |
+| \u | Unicode escape sequence |
+| \v | Vertical tab |
+| \x | Unicode escape sequence similar to "\u| except with variable length |
+
