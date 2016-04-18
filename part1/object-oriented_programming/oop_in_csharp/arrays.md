@@ -11,7 +11,8 @@ An array has the following properties:
 * Default values of numeric array elements are set to zero. Reference elements (such as strings) are set to null.
 * **Jagged Array.** An array of arrays, and therefore its elements are reference types and are initialized to *null*.
 * **Zero indexed.** An array with *N* elements is indexed from *0* to *N-1*.
-* 
+* Array elements can be of any type, including an array type.
+* *foreach* iteration can be used on all arrays in C#.
 
 ## Example
 
