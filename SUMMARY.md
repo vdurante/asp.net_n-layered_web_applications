@@ -16,7 +16,7 @@
        * [OOP in C#](part1/object-oriented_programming/oop_in_csharp/README.md)
            * [Classes and Objects](part1/object-oriented_programming/oop_in_csharp/classes_and_objects.md)
        * [The SOLID Design](part1/object-oriented_programming/the_solid_design/README.md)
-           * Single Responsibility Principle
+           * [Single Responsibility Principle](part1/object-oriented_programming/the_solid_design/single_responsibility_principle.md)
        * [Extra Resources](part1/object-oriented_programming/extra_resources.md)
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
