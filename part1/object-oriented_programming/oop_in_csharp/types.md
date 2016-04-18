@@ -33,8 +33,8 @@ The following table shows the built-in C# types:
 | -- | -- | -- | -- | -- |
 | bool | Boolean | (*true* or *false*) | |
 | byte | Integral | 0 to 255 | Unsigned 8-bit integer |
-|  |  |  |  |
-|  |  |  |  |
+| sbyte | Integral | -128 to 127 | Signed 8-bit integer |
+| char | Unicode character | U+0000 to U+FFFF | 16-bit numeric (ordinal) value |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
