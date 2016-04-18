@@ -110,5 +110,7 @@ string quote = @"Her name was ""Sara.""";
 | \U | Unicode escape sequence for surrogate pairs |
 | \u | Unicode escape sequence |
 | \v | Vertical tab |
-| \x | Unicode escape sequence similar to "\u| except with variable length |
+| \x | Unicode escape sequence similar to "\u" except with variable length |
+
+
 
