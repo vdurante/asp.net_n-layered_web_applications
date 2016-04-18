@@ -129,3 +129,14 @@ class FormatString
     }
 }
 ```
+
+## Substrings
+
+A substring is any sequence of characters that is contained in a string. Substrings can be separated as needed.
+
+```csharp
+string s3 = "Visual C# Express";
+System.Console.WriteLine(s3.Substring(7, 2));
+// Output: "C#"
+```
+
