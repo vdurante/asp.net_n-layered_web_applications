@@ -23,6 +23,8 @@ However, this time I decided to write a book on my free time to document everyth
 
 I must make it clear that apart from the practical examples (Part II and onward), I didn't generate all the content of this book. I call it a book due to its size, but I see it as fragments of important and spread concepts that I stumbled upon during my research and studies. Everything is available for free on the internet. You can read more about these resources at "Extra Resources" sections throughout Part I.
 
+The examples were entirely written by me using ASP.NET Boilerplate, sometimes inspired by famous books and resources of MVC development, but working with frameworks other than ASP.NET Boilerplate. These resources are also available for free on the internet and will be presented throughout the book, for the sake of comparison. 
+
 ## Part I. Building The Theoretical Foundation
 
 Part one describes the theory behind robust programming, software architecture, software engineering, design patterns, general conventions, C# language, the ASP.NET MVC framework and the ASP.NET Boilerplate framework.
