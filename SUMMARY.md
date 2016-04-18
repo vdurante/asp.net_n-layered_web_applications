@@ -11,10 +11,10 @@
        * [N-Layer Architecture](part1/software_architecture/n-layer_architecture.md)
        * [ASP.NET Boilerplate's Architecture](part1/software_architecture/aspnet_boilerplates_architecture.md)
        * [Extra Resources](part1/software_architecture/extra_resources.md)
+   * [Object-Oriented Programming](part1/object-oriented_programming.md)
    * [Design Patterns](part1/design_patterns/README.md)
        * [What Is A Design Pattern?](part1/design_patterns/what_is_a_design_pattern.md)
        * [Repository](part1/design_patterns/repository.md)
        * [Dependency Injection](part1/design_patterns/dependency_injection.md)
        * [Extra Resources](part1/design_patterns/extra_resources.md)
-   * [Object-Oriented Programming](part1/object-oriented_programming.md)
 
