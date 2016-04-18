@@ -18,7 +18,7 @@
            * [Types](part1/object-oriented_programming/oop_in_csharp/types.md)
            * [Arrays](part1/object-oriented_programming/oop_in_csharp/arrays.md)
            * [Strings](part1/object-oriented_programming/oop_in_csharp/strings.md)
-           * Expressions
+           * [Expressions](part1/object-oriented_programming/oop_in_csharp/expressions.md)
        * [The SOLID Design](part1/object-oriented_programming/the_solid_design/README.md)
            * [Single Responsibility Principle](part1/object-oriented_programming/the_solid_design/single_responsibility_principle.md)
        * [Extra Resources](part1/object-oriented_programming/extra_resources.md)
