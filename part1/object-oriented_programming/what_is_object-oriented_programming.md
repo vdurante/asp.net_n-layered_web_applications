@@ -18,4 +18,4 @@ Robert C. Martin proposed the "first five principles" of object-oriented design.
 
 * **Single Responsibility Principle.** A class should only have a single responsibility.
 * **Open/Closed Principle.** Classes, modules, functions, etc. should be open for extension, but closed for modification.
-* **Liskov Substitution Principle.** An extention of the Open/Close principle. 
+* **Liskov Substitution Principle.** If class D is derived from base class B, class D must be completely substitutable for the base class B. 
